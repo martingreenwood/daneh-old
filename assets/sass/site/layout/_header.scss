@@ -1,0 +1,19 @@
+#masthead {
+	float: left;
+	width: 100%;
+	padding: 20px 0;
+	background: $site-border-color;
+
+	.site-branding {
+		float: left;
+
+		.custom-logo-link {
+			display: block;
+
+			.custom-logo {
+				height: 40px;
+				width: auto;
+			}
+		}
+	}
+}

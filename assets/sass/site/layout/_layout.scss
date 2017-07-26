@@ -1,0 +1,49 @@
+#page {
+	min-height: 100vh;
+}
+
+.disablescroll {
+	overflow: hidden;
+}
+
+// Container
+.container {
+	@include outer-container(100%);
+	padding: 0 50px;
+}
+
+.row {
+	@include row();
+	margin-bottom: 20px;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+
+// Sticly Fix
+.sticky {
+
+	#content {
+		//padding-top: 63px;
+	}
+}
+
+// Table
+
+.table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.cell {
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+
+	&.middle {
+		vertical-align: middle;
+	}
+}
