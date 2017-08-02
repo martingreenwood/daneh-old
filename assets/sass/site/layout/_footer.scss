@@ -4,6 +4,10 @@
 	padding: 20px 0;
 	background: $site-border-color;
 
+	position: fixed;
+	bottom: 0;
+	z-index: 10;
+
 	.social {
 		float: left;
 	}

@@ -1,5 +1,5 @@
 // Typography
-$base-font-family: $helvetica;
+$base-font-family: "proxima-nova", $helvetica;
 $heading-font-family: $base-font-family;
 $font-pre: $monospace;
 $font-code: $font-pre;
@@ -29,7 +29,7 @@ $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
 
-$site-border-color: #ec5210;
+$site-border-color: #fff;
 
 $color-link: $brand-primary;
 $link-hover: darken($brand-primary, 10%);

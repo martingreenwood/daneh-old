@@ -41,6 +41,8 @@ function daneh_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'collection', 500, 900, true );
+	add_image_size( 'press', 370, 666, true );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -114,11 +116,31 @@ add_action( 'widgets_init', 'daneh_widgets_init' );
 function daneh_scripts() {
 	wp_enqueue_style( 'daneh-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'jquery' );	
+	wp_enqueue_script( 'jquery' );
+	wp_enqueue_script( 'daneh-font-awesome', 'https://use.fontawesome.com/9abff3b772.js', '', '', true );
 	wp_enqueue_script( 'daneh-navigation', get_template_directory_uri() . '/js/navigation.js', '', '', true );
 
 }
 add_action( 'wp_enqueue_scripts', 'daneh_scripts' );
+
+/**
+ * Enqueue Tylekit.
+ */
+function daneh_typekit() {
+?>
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'afb4pre',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+<?php
+}
+add_action( 'wp_head', 'daneh_typekit', 99 );
 
 /**
  * Custom template tags for this theme.

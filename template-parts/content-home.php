@@ -10,7 +10,18 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="entry-content">
-		<?php the_content(); ?>
+
+	<?php 
+	$home_page_box_image = get_field( 'home_page_box_image' );
+	$home_page_tall_image = get_field( 'home_page_tall_image' );
+	?>
+
+	<div id="home_page_box_image" class="coverimage" style="background-image: url(<?php echo $home_page_box_image; ?>)">
+		
 	</div>
+
+	<div id="home_page_tall_image" class="coverimage" style="background-image: url(<?php echo $home_page_tall_image; ?>)">
+		
+	</div>
+
 </article>

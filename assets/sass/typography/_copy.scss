@@ -4,6 +4,10 @@ html {
 
 p {
 	@include rem(margin-bottom, 15px);
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
 }
 
 dfn, cite, em, i {

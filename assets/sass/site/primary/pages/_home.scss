@@ -1,0 +1,19 @@
+.home {
+
+	#home_page_box_image {
+		width: 70%;
+		border-right: 25px solid $site-border-color;
+	}
+
+	#home_page_tall_image {
+		width: 30%;
+		border-left: 25px solid $site-border-color;
+	}
+
+	.coverimage {
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+		float: left;
+	}
+}

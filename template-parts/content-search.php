@@ -16,15 +16,16 @@
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php daneh_posted_on(); ?>
-		</div><!-- .entry-meta -->
+		</div>
 		<?php endif; ?>
-	</header><!-- .entry-header -->
+	</header>
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
+	</div>
 
 	<footer class="entry-footer">
 		<?php daneh_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+	</footer>
+
+</article>

@@ -92,6 +92,26 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/assets\/left-chevron.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/left-chevron.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/right-chevron.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/right-chevron.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/sass\/_normalize.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1834,6 +1854,45 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/sass\/site\/primary\/pages\/_about.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/site\/primary\/pages\/_about.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/site\/primary\/pages\/_collections.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/site\/primary\/pages\/_collections.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/site\/primary\/pages\/_contact.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/site\/primary\/pages\/_contact.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/sass\/site\/primary\/pages\/_home.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1843,6 +1902,32 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/sass\/site\/primary\/pages\/_home.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/site\/primary\/pages\/_press.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/site\/primary\/pages\/_press.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/site\/primary\/pages\/_woocommerce.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/site\/primary\/pages\/_woocommerce.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1996,6 +2081,36 @@
 		"oAP": "\/LICENSE",
 		"oF": 0
 		},
+	"\/page-about.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-about.php",
+		"oF": 0
+		},
+	"\/page-collections.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-collections.php",
+		"oF": 0
+		},
+	"\/page-contact.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-contact.php",
+		"oF": 0
+		},
+	"\/page-press.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-press.php",
+		"oF": 0
+		},
+	"\/page-video.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-video.php",
+		"oF": 0
+		},
 	"\/page.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -2087,6 +2202,24 @@
 		"oAP": "\/style.css.map",
 		"oF": 0
 		},
+	"\/template-parts\/content-about.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-about.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-collections.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-collections.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-contact.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-contact.php",
+		"oF": 0
+		},
 	"\/template-parts\/content-home.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -2105,16 +2238,34 @@
 		"oAP": "\/template-parts\/content-page.php",
 		"oF": 0
 		},
+	"\/template-parts\/content-press.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-press.php",
+		"oF": 0
+		},
 	"\/template-parts\/content-search.php": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/template-parts\/content-search.php",
 		"oF": 0
 		},
+	"\/template-parts\/content-video.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-video.php",
+		"oF": 0
+		},
 	"\/template-parts\/content.php": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/template-parts\/content.php",
+		"oF": 0
+		},
+	"\/woocommerce\/content-single-product.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/woocommerce\/content-single-product.php",
 		"oF": 0
 		}
 	},

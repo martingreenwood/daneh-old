@@ -48,20 +48,25 @@
 	li {
 		float: left;
 		position: relative;
+		text-transform: uppercase;
+		margin-left: 20px;
 
 		&:hover > a,
 		&.focus > a {
+			color: $dark-gray;
 		}
 	}
 	a {
 		display: block;
 		text-decoration: none;
+		letter-spacing: 2px;
 	}
 
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
+		color: $dark-gray;
 	}
 }
 

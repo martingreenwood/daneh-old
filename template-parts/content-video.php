@@ -11,8 +11,16 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="entry-content">
-		<?php the_content(); ?>
+	<div class="table">
+		<div class="cell middle">
+
+			<div class="entry-content">
+				<center>
+				<?php the_content(); ?>
+				</center>
+			</div>
+
+		</div>
 	</div>
 
 </article>

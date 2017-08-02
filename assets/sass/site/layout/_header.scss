@@ -4,8 +4,16 @@
 	padding: 20px 0;
 	background: $site-border-color;
 
+	position: fixed;
+	top: 0;
+	z-index: 10;
+
 	.site-branding {
 		float: left;
+
+		img {
+			display: block;
+		}
 
 		.custom-logo-link {
 			display: block;
