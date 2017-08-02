@@ -116,4 +116,64 @@
 			}
 		}
 	}
+
+	&.tax-collection {
+
+		#primary {
+
+			.products {
+
+				li {
+
+					a {
+						
+						&:before {
+							content: "";
+							position: absolute;
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 100%;
+							background: rgba(0, 0, 0, 0.3);
+							opacity: 0;
+							-webkit-transition: all 300ms ease-in-out;
+							-moz-transition: all 300ms ease-in-out;
+							-ms-transition: all 300ms ease-in-out;
+							-o-transition: all 300ms ease-in-out;
+							transition: all 300ms ease-in-out;
+						}
+
+						h2 {
+							padding: 0;
+							position: absolute;
+							top: 50%;
+							text-align: center;
+							width: 100%;
+							color: white;
+							margin-top: -20px;
+							opacity: 0;
+							-webkit-transition: all 300ms ease-in-out;
+							-moz-transition: all 300ms ease-in-out;
+							-ms-transition: all 300ms ease-in-out;
+							-o-transition: all 300ms ease-in-out;
+							transition: all 300ms ease-in-out;
+						}
+					}
+
+					&:hover {
+						a {
+							
+							&:before {
+								opacity: 1;
+							}
+
+							h2 {
+								opacity: 1;
+							}
+						}						
+					}
+				}
+			}
+		}
+	}
 }
