@@ -504,14 +504,28 @@ a:hover, a:active { outline: 0; }
 
 #main { background: white; }
 
+.page .featureimage { width: 50%; border-right: 25px solid #fff; }
+
+.page .content { width: 50%; border-left: 25px solid #fff; }
+
+.page .content .split { height: 50%; }
+
+.page .content .split.top { border-bottom: 25px solid #fff; }
+
+.page .content .split.bottom { border-top: 25px solid #fff; background-size: cover; background-position: top; }
+
+.page .content, .page .featureimage { height: 100%; background-size: cover; background-position: center; float: left; }
+
 /*--------------------------------------------------------------
 ## Home
 --------------------------------------------------------------*/
 .home #home_page_box_image { width: 70%; border-right: 25px solid #fff; }
 
+.home #home_page_box_image.wide { width: 100%; border: 0; }
+
 .home #home_page_tall_image { width: 30%; border-left: 25px solid #fff; }
 
-.home .coverimage { height: 100%; background-size: cover; background-position: center; float: left; }
+.home .coverimage { height: 100%; background-size: cover; background-position: top; float: left; }
 
 /*--------------------------------------------------------------
 ## About
@@ -524,7 +538,7 @@ a:hover, a:active { outline: 0; }
 
 .about .content .split.top { border-bottom: 25px solid #fff; }
 
-.about .content .split.bottom { border-top: 25px solid #fff; background-size: cover; background-position: center; }
+.about .content .split.bottom { border-top: 25px solid #fff; background-size: cover; background-position: top; }
 
 .about .content, .about .featureimage { height: 100%; background-size: cover; background-position: center; float: left; }
 
@@ -553,7 +567,7 @@ a:hover, a:active { outline: 0; }
 
 .contact .content .split.bottom { border-top: 25px solid #fff; background-size: cover; background-position: center; }
 
-.contact .content, .contact .featureimage { height: 100%; background-size: cover; background-position: center; float: left; }
+.contact .content, .contact .featureimage { height: 100%; background-size: cover; background-position: top; float: left; }
 
 /*--------------------------------------------------------------
 ## Collections
@@ -566,11 +580,38 @@ a:hover, a:active { outline: 0; }
 
 .collections .row .collection img { display: block; }
 
-.collections .row .collection .overlay { position: absolute; letter-spacing: 3px; opacity: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); z-index: 5; color: white; text-transform: uppercase; font-size: 44px; -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -ms-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out; }
+.collections .row .collection .overlay { position: absolute; letter-spacing: 3px; opacity: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); z-index: 5; color: white; text-transform: uppercase; font-size: 46px; padding: 0 50px; line-height: 1; -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -ms-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out; }
 
 .collections .row .collection:hover .overlay { opacity: 1; }
 
 .collections #colophon { position: relative; }
+
+/*--------------------------------------------------------------
+## Retailers
+--------------------------------------------------------------*/
+.retailers .featureimage { width: 50%; border-right: 25px solid #fff; }
+
+.retailers .content { width: 50%; border-left: 25px solid #fff; }
+
+.retailers .content .split { height: 50%; }
+
+.retailers .content .split.top { border-bottom: 25px solid #fff; }
+
+.retailers .content .split.bottom { border-top: 25px solid #fff; background-size: cover; background-position: top; }
+
+.retailers .content, .retailers .featureimage { height: 100%; background-size: cover; background-position: top; float: left; }
+
+.retailers .row { position: relative; }
+
+.retailers .row .retailer { float: left; display: block; margin-right: 2.1276595745%; width: 48.9361702128%; float: left; margin-bottom: 30px; position: relative; }
+
+.retailers .row .retailer:last-child { margin-right: 0; }
+
+.retailers .row .retailer a { text-decoration: none; }
+
+.retailers .row .retailer a h3 { font-size: 30px; color: #333; }
+
+.retailers .row .retailer a p { color: #706f6f; margin-bottom: 0; }
 
 /*--------------------------------------------------------------
 ## Press
@@ -592,6 +633,18 @@ a:hover, a:active { outline: 0; }
 /*--------------------------------------------------------------
 ## WooCommerce
 --------------------------------------------------------------*/
+.woocommerce.woocommerce-page #content .product .images { float: left; width: 100%; height: 100%; margin: 0; }
+
+.woocommerce.woocommerce-page #content .product .images .woocommerce-product-gallery__wrapper { margin: 0; height: 100%; }
+
+.woocommerce.woocommerce-page #content .product .images .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image { display: none; height: 100%; }
+
+.woocommerce.woocommerce-page #content .product .images .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image a, .woocommerce.woocommerce-page #content .product .images .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image img { height: 100%; display: block; }
+
+.woocommerce.woocommerce-page #content .product .images .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image img { opacity: 0; }
+
+.woocommerce.woocommerce-page #content .product .images .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:first-of-type { display: block; }
+
 .woocommerce.woocommerce-page .prod-links { position: absolute; height: auto; top: 50%; z-index: 10; width: 100%; }
 
 .woocommerce.woocommerce-page .prod-links p.next { right: -40px; position: relative; float: right; line-height: 1; }
@@ -612,6 +665,8 @@ a:hover, a:active { outline: 0; }
 
 .woocommerce.woocommerce-page #primary .products li:last-child { margin-right: 0; }
 
+.woocommerce.woocommerce-page #primary .products li.last { margin-right: 0; }
+
 .woocommerce.woocommerce-page #primary .products li img { display: block; margin-bottom: 0; }
 
 .woocommerce.woocommerce-page #primary .products ul { margin-bottom: 0; }
@@ -626,9 +681,9 @@ a:hover, a:active { outline: 0; }
 
 .woocommerce.woocommerce-page #primary .product .content .split.top { border-bottom: 25px solid #fff; }
 
-.woocommerce.woocommerce-page #primary .product .content .split.bottom { border-top: 25px solid #fff; background-size: cover; background-position: center; }
+.woocommerce.woocommerce-page #primary .product .content .split.bottom { border-top: 25px solid #fff; background-size: cover; background-position: top; }
 
-.woocommerce.woocommerce-page #primary .product .content, .woocommerce.woocommerce-page #primary .product .featureimage { height: 100%; background-size: cover; background-position: center; float: left; }
+.woocommerce.woocommerce-page #primary .product .content, .woocommerce.woocommerce-page #primary .product .featureimage { height: 100%; background-size: cover; background-position: top; float: left; }
 
 .woocommerce.woocommerce-page #primary .product .entry-summary { margin-bottom: 0; float: left; width: 75%; }
 
@@ -638,7 +693,7 @@ a:hover, a:active { outline: 0; }
 
 .woocommerce.woocommerce-page.tax-collection #primary .products li a:before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); opacity: 0; -webkit-transition: all 300ms ease-in-out; -moz-transition: all 300ms ease-in-out; -ms-transition: all 300ms ease-in-out; -o-transition: all 300ms ease-in-out; transition: all 300ms ease-in-out; }
 
-.woocommerce.woocommerce-page.tax-collection #primary .products li a h2 { padding: 0; position: absolute; top: 50%; text-align: center; width: 100%; color: white; margin-top: -20px; opacity: 0; -webkit-transition: all 300ms ease-in-out; -moz-transition: all 300ms ease-in-out; -ms-transition: all 300ms ease-in-out; -o-transition: all 300ms ease-in-out; transition: all 300ms ease-in-out; }
+.woocommerce.woocommerce-page.tax-collection #primary .products li a h2 { padding: 0; position: absolute; top: 50%; text-align: center; width: 100%; color: white; margin-top: -20px; opacity: 0; font-size: 46px; padding: 0 50px; line-height: 1; -webkit-transition: all 300ms ease-in-out; -moz-transition: all 300ms ease-in-out; -ms-transition: all 300ms ease-in-out; -o-transition: all 300ms ease-in-out; transition: all 300ms ease-in-out; }
 
 .woocommerce.woocommerce-page.tax-collection #primary .products li:hover a:before { opacity: 1; }
 

@@ -16,12 +16,10 @@
 	$home_page_tall_image = get_field( 'home_page_tall_image' );
 	?>
 
-	<div id="home_page_box_image" class="coverimage" style="background-image: url(<?php echo $home_page_box_image; ?>)">
-		
-	</div>
+	<div id="home_page_box_image" class="coverimage <?php if(!$home_page_tall_image): ?>wide<?php endif; ?>" style="background-image: url(<?php echo $home_page_box_image; ?>)"></div>
 
-	<div id="home_page_tall_image" class="coverimage" style="background-image: url(<?php echo $home_page_tall_image; ?>)">
-		
-	</div>
+	<?php if ($home_page_tall_image): ?>
+	<div id="home_page_tall_image" class="coverimage" style="background-image: url(<?php echo $home_page_tall_image; ?>)"></div>
+	<?php endif ?>
 
 </article>

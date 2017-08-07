@@ -1919,6 +1919,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/sass\/site\/primary\/pages\/_retailers.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/site\/primary\/pages\/_retailers.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/sass\/site\/primary\/pages\/_woocommerce.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2105,6 +2118,12 @@
 		"oAP": "\/page-press.php",
 		"oF": 0
 		},
+	"\/page-retailers.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-retailers.php",
+		"oF": 0
+		},
 	"\/page-video.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -2242,6 +2261,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/template-parts\/content-press.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-retailers.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-retailers.php",
 		"oF": 0
 		},
 	"\/template-parts\/content-search.php": {

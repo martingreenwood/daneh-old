@@ -3,6 +3,11 @@
 	#home_page_box_image {
 		width: 70%;
 		border-right: 25px solid $site-border-color;
+
+		&.wide {
+			width: 100%;
+			border: 0;
+		}
 	}
 
 	#home_page_tall_image {
@@ -13,7 +18,7 @@
 	.coverimage {
 		height: 100%;
 		background-size: cover;
-		background-position: center;
+		background-position: top;
 		float: left;
 	}
 }

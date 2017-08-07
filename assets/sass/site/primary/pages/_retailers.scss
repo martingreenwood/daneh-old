@@ -1,4 +1,4 @@
-.about {
+.retailers {
 
 	.featureimage {
 		width: 50%;
@@ -27,7 +27,36 @@
 	.content, .featureimage {
 		height: 100%;
 		background-size: cover;
-		background-position: center;
+		background-position: top;
 		float: left;
+	}
+
+	.row {
+		position: relative;
+
+		.retailer {
+			@include span-columns(6);
+			float: left;
+			margin-bottom: 30px;
+			position: relative;
+
+			a {
+				text-decoration: none;
+
+				h3 {
+					font-size: 30px;
+					color: $dark-gray;
+				}
+
+				p {
+					color: $brand-primary;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	#colophon {
+		//position: relative;
 	}
 }

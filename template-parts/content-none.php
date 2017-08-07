@@ -10,11 +10,21 @@
 ?>
 
 <section class="no-results not-found">
-	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'daneh' ); ?></h1>
-	</header><!-- .page-header -->
 
-	<div class="page-content">
+	<?php
+	$thumb_id = get_post_thumbnail_id();
+	$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true);
+	$thumb_url = $thumb_url_array[0];
+	?>
+
+	<div class="featureimage" style="background-image: url(<?php echo $thumb_url; ?>)">
+		
+	</div>
+
+	<div class="content">
+		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'daneh' ); ?></h1>
+
+		<div class="page-content">
 		<?php
 		if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
@@ -46,5 +56,6 @@
 				get_search_form();
 
 		endif; ?>
-	</div><!-- .page-content -->
+	</div>
+
 </section><!-- .no-results -->

@@ -5,6 +5,10 @@
  * @package Daneh
  */
 
+// add_theme_support( 'wc-product-gallery-zoom' );
+add_theme_support( 'wc-product-gallery-lightbox' );
+// add_theme_support( 'wc-product-gallery-slider' );
+
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
 
@@ -39,7 +43,7 @@ function daneh_custom_post_type()
 				'singular_name' => __('Retailer'),
 			],
 			'public'      => true,
-			'has_archive' => flase,
+			'has_archive' => false,
 			'menu_icon'   => 'dashicons-store',
 		]
 	);
@@ -51,7 +55,7 @@ function daneh_custom_post_type()
 				'singular_name' => __('Press'),
 			],
 			'public'      => true,
-			'has_archive' => flase,
+			'has_archive' => false,
 			'menu_icon'   => 'dashicons-book',
 			'supports'    => array( 'title', 'thumbnail' ),
 		]
@@ -177,4 +181,22 @@ function wc_next_prev_products_links() {
 		<p class="next"><?php next_post_link( '%link', '' ); ?></p>
 	</div>
 	<?php
+}
+
+
+/**
+ * new_loop_shop_per_page
+ *
+ * change number of products per page
+ *
+ * @access      public
+ * @since       1.0 
+ * @return      void
+*/
+add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page', 20 );
+function new_loop_shop_per_page( $cols ) {
+  // $cols contains the current number of products per page based on the value stored on Options -> Reading
+  // Return the number of products you wanna show per page.
+  $cols = -1;
+  return $cols;
 }

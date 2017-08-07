@@ -29,6 +29,39 @@
 	background: white;
 }
 
+.page {
+	.featureimage {
+		width: 50%;
+		border-right: 25px solid $site-border-color;
+	}
+
+	.content {
+		width: 50%;
+		border-left: 25px solid $site-border-color;
+
+		.split {
+			height: 50%;
+
+			&.top {
+				border-bottom: 25px solid $site-border-color;
+			}
+
+			&.bottom {
+				border-top: 25px solid $site-border-color;
+				background-size: cover;
+				background-position: top;
+			}
+		}
+	}
+
+	.content, .featureimage {
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+		float: left;
+	}
+}
+
 /*--------------------------------------------------------------
 ## Home
 --------------------------------------------------------------*/
@@ -48,6 +81,11 @@
 ## Collections
 --------------------------------------------------------------*/
 @import "pages/collections";
+
+/*--------------------------------------------------------------
+## Retailers
+--------------------------------------------------------------*/
+@import "pages/retailers";
 
 /*--------------------------------------------------------------
 ## Press

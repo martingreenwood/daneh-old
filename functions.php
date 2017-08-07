@@ -118,7 +118,7 @@ function daneh_scripts() {
 
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'daneh-font-awesome', 'https://use.fontawesome.com/9abff3b772.js', '', '', true );
-	wp_enqueue_script( 'daneh-navigation', get_template_directory_uri() . '/js/navigation.js', '', '', true );
+	wp_enqueue_script( 'daneh-navigation', get_template_directory_uri() . '/assets/js/navigation.js', '', '', true );
 
 }
 add_action( 'wp_enqueue_scripts', 'daneh_scripts' );

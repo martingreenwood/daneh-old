@@ -14,7 +14,8 @@
 	<?php 
 	$count = 1;
 	$terms = get_terms('collection', array(
-		'hide_empty' => false,
+		'hide_empty' 	=> true,
+		'order' 		=> 'DESC'
 	));
 
 	if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){

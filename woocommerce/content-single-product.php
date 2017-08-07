@@ -35,7 +35,31 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 	return;
 	 }
 ?>
+<?php /* ?>
+<script>
+jQuery(function( $ ) {
+	var keymap = {};
 
+	// LEFT
+	keymap[ 37 ] = ".prev a";
+	// RIGHT
+	keymap[ 39 ] = ".next a";
+
+	$( document ).on( "keyup", function(event) {
+		var href,
+		    selector = keymap[ event.which ];
+		// if the key pressed was in our map, check for the href
+		if ( selector ) {
+			href = $( selector ).attr( "href" );
+			if ( href ) {
+				// navigate where the link points
+				window.location = href;
+			}
+		}
+	});
+});
+</script>
+<?php */ ?>
 <div id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php
@@ -53,7 +77,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->post->ID ), 'single-post-thumbnail' );?>
 
 	<div class="featureimage" style="background-image: url(<?php  echo $image[0]; ?>);">
-		
+		<div class="table">
+			<div class="cell middle">
+				<?php woocommerce_show_product_images(); ?>
+			</div>
+		</div>
 	</div>
 
 	<div class="content">
