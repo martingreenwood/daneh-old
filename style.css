@@ -510,7 +510,7 @@ a:hover, a:active { outline: 0; }
 
 #main { background: white; position: relative; }
 
-.page .featureimage, .single .featureimage { width: 50%; border-right: 25px solid #fff; }
+.page .featureimage, .single .featureimage { width: 50%; border-right: 25px solid #fff; overflow: hidden; }
 
 .page .content, .single .content { width: 50%; border-left: 25px solid #fff; overflow: scroll; }
 
