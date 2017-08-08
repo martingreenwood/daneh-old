@@ -18,10 +18,14 @@ get_header(); ?>
 		<main id="main" class="site-main">
 
 		<?php
+		$count = 1;
 		if ( have_posts() ) :
 
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
+			if ($count%4 == 1) {  
+			echo "<div class='row'>";
+			}
 
 				/*
 				 * Include the Post-Format-specific template for the content.
@@ -29,8 +33,14 @@ get_header(); ?>
 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */
 				get_template_part( 'template-parts/content', get_post_format() );
-
+			
+			if ($count%4 == 0) {
+			echo "</div>";
+			}
+			$count++;
 			endwhile;
+
+			if ($count%4 != 1) echo "</div>"; //This is to ensure there is no open div if the number of elements in terms is not a multiple of 4
 
 			the_posts_navigation();
 

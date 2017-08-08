@@ -36,13 +36,13 @@ fieldset { background-color: #cccccc; border: 1px solid #333; margin: 0 0 0.8125
 
 input, label, select { display: block; font-family: "proxima-nova", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; font-size: 16px; }
 
-label { font-weight: 600; margin-bottom: 0.40625rem; }
+label { font-weight: 500; margin-bottom: 0.40625rem; }
 
 label.required::after { content: "*"; }
 
 label abbr { display: none; }
 
-input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea, select[multiple=multiple] { background-color: #fff; border: 1px solid #333; border-radius: 3px; box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06); box-sizing: border-box; font-family: "proxima-nova", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; font-size: 16px; margin-bottom: 0.8125rem; padding: 0.5416666667rem; transition: border-color 150ms ease; width: 100%; }
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea, select[multiple=multiple] { background-color: #fff; border: 1px solid #333; box-sizing: border-box; font-family: "proxima-nova", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; font-size: 16px; margin-bottom: 0.8125rem; padding: 0.5416666667rem; transition: border-color 150ms ease; width: 100%; }
 
 input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover, select[multiple=multiple]:hover { border-color: #292929; }
 
@@ -240,9 +240,15 @@ table { margin: 0 0 15px; margin: 0 0 1.5rem; width: 100%; }
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-button, input[type="button"], input[type="reset"], input[type="submit"] { border: 1px solid; border-color: #333; background: transparent; color: #706f6f; padding: 10px 20px; padding: 1rem 2rem; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { border: 1px solid; border-color: #333; background: transparent; color: #706f6f; padding: 10px 20px; padding: 1rem 2rem; outline: none; }
 
-input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea { color: #706f6f; border: 1px solid #ddd; }
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea { color: #706f6f; border: 1px solid #ddd; outline: 0; box-shadow: none; }
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, textarea:focus { box-shadow: none; }
+
+textarea { outline: 0; box-shadow: none; color: #706f6f; border: 1px solid #ddd; }
+
+textarea:focus { box-shadow: none; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -263,7 +269,7 @@ a:hover, a:active { outline: 0; }
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation { display: block; float: right; }
+.main-navigation { display: block; float: right; line-height: 40px; }
 
 .main-navigation ul { display: none; list-style: none; margin: 0; padding-left: 0; }
 
@@ -492,7 +498,7 @@ a:hover, a:active { outline: 0; }
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
-#content { height: 100vh; padding-top: 87px; padding-bottom: 56px; position: relative; background-color: #fff; }
+#content { height: 100vh; padding-top: 80px; padding-bottom: 56px; position: relative; background-color: #fff; }
 
 #primary, #main, .hentry { height: 100%; }
 
@@ -502,19 +508,19 @@ a:hover, a:active { outline: 0; }
 
 #primary h2, #main h2, .hentry h2 { letter-spacing: 3px; }
 
-#main { background: white; }
+#main { background: white; position: relative; }
 
-.page .featureimage { width: 50%; border-right: 25px solid #fff; }
+.page .featureimage, .single .featureimage { width: 50%; border-right: 25px solid #fff; }
 
-.page .content { width: 50%; border-left: 25px solid #fff; }
+.page .content, .single .content { width: 50%; border-left: 25px solid #fff; overflow: scroll; }
 
-.page .content .split { height: 50%; }
+.page .content .split, .single .content .split { height: 50%; }
 
-.page .content .split.top { border-bottom: 25px solid #fff; }
+.page .content .split.top, .single .content .split.top { border-bottom: 25px solid #fff; }
 
-.page .content .split.bottom { border-top: 25px solid #fff; background-size: cover; background-position: top; }
+.page .content .split.bottom, .single .content .split.bottom { border-top: 25px solid #fff; background-size: cover; background-position: top; }
 
-.page .content, .page .featureimage { height: 100%; background-size: cover; background-position: center; float: left; }
+.page .content, .page .featureimage, .single .content, .single .featureimage { height: 100%; background-size: cover; background-position: center; float: left; }
 
 /*--------------------------------------------------------------
 ## Home
@@ -631,8 +637,39 @@ a:hover, a:active { outline: 0; }
 .press #colophon { position: relative; }
 
 /*--------------------------------------------------------------
+## Diary (blog)
+--------------------------------------------------------------*/
+.blog #primary .row, .archive #primary .row { position: relative; }
+
+.blog #primary .row .post, .archive #primary .row .post { float: left; display: block; margin-right: 2.1276595745%; width: 23.4042553191%; float: left; text-align: center; margin-bottom: 30px; position: relative; }
+
+.blog #primary .row .post:last-child, .archive #primary .row .post:last-child { margin-right: 0; }
+
+.blog #primary .row .post img, .archive #primary .row .post img { display: block; }
+
+.blog #primary .row .post .overlay, .archive #primary .row .post .overlay { position: absolute; opacity: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); z-index: 5; color: white; text-transform: uppercase; font-size: 46px; padding: 0 50px; line-height: 1; -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -ms-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out; }
+
+.blog #primary .row .post .overlay h3, .archive #primary .row .post .overlay h3 { color: white; text-transform: uppercase; font-size: 46px; line-height: 1; }
+
+.blog #primary .row .post .overlay small, .archive #primary .row .post .overlay small { color: white; text-transform: uppercase; font-size: 26px; line-height: 1; }
+
+.blog #primary .row .post:hover .overlay, .archive #primary .row .post:hover .overlay { opacity: 1; }
+
+.blog #primary #colophon, .archive #primary #colophon { position: relative; }
+
+.single #primary h1, .single #main h1, .single .hentry h1 { margin-top: 0; margin-bottom: 0; }
+
+/*--------------------------------------------------------------
 ## WooCommerce
 --------------------------------------------------------------*/
+a.wcmenucart-contents { color: #77a464; }
+
+.woocommerce.woocommerce-page #content .woocommerce-error, .woocommerce.woocommerce-page #content .woocommerce-info, .woocommerce.woocommerce-page #content .woocommerce-message { position: absolute; top: 0; z-index: 41; width: 100%; }
+
+.woocommerce.woocommerce-page #content .woocommerce-error .button, .woocommerce.woocommerce-page #content .woocommerce-info .button, .woocommerce.woocommerce-page #content .woocommerce-message .button { float: right; text-transform: uppercase; font-weight: 500; }
+
+.woocommerce.woocommerce-page #content .product .quantity .qty { width: 3.631em; text-align: center; margin: 0; border-color: #ccc; border-radius: 0; box-shadow: none; outline: 0; padding: 5px; }
+
 .woocommerce.woocommerce-page #content .product .images { float: left; width: 100%; height: 100%; margin: 0; }
 
 .woocommerce.woocommerce-page #content .product .images .woocommerce-product-gallery__wrapper { margin: 0; height: 100%; }
@@ -644,6 +681,16 @@ a:hover, a:active { outline: 0; }
 .woocommerce.woocommerce-page #content .product .images .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image img { opacity: 0; }
 
 .woocommerce.woocommerce-page #content .product .images .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:first-of-type { display: block; }
+
+.woocommerce.woocommerce-page #content .product .price { color: #77a464; font-size: 1.25em; float: left; }
+
+.woocommerce.woocommerce-page #content .product #alg_currency_selector { float: left; margin-left: 10px; }
+
+.woocommerce.woocommerce-page #content .product #alg_currency_selector select { border: 1px solid #ccc; border-radius: 0; appearance: none; -webkit-appearance: none; background: #ffffff; padding: 4px 20px 4px 10px; background-image: url(assets/arrow_down.svg); background-position: right center; background-repeat: no-repeat; background-size: 20px; color: black; text-transform: uppercase; font-size: 14px; outline: 0; }
+
+.woocommerce.woocommerce-page #content .product .cart { margin-bottom: 0; float: left; width: 100%; margin-top: 20px; }
+
+.woocommerce.woocommerce-page #content .product .cart .button { vertical-align: middle; float: left; padding: 11px 10px; border-radius: 0; background: black; text-transform: uppercase; outline: 0; }
 
 .woocommerce.woocommerce-page .prod-links { position: absolute; height: auto; top: 50%; z-index: 10; width: 100%; }
 
@@ -699,6 +746,38 @@ a:hover, a:active { outline: 0; }
 
 .woocommerce.woocommerce-page.tax-collection #primary .products li:hover a h2 { opacity: 1; }
 
+.woocommerce-checkout .woocommerce #add_payment_method .wc-proceed-to-checkout, .woocommerce-checkout .woocommerce .wc-proceed-to-checkout, .woocommerce-checkout .woocommerce .wc-proceed-to-checkout, .woocommerce-cart .woocommerce #add_payment_method .wc-proceed-to-checkout, .woocommerce-cart .woocommerce .wc-proceed-to-checkout, .woocommerce-cart .woocommerce .wc-proceed-to-checkout { padding: 0; }
+
+.woocommerce-checkout .woocommerce #add_payment_method .wc-proceed-to-checkout a, .woocommerce-checkout .woocommerce .wc-proceed-to-checkout a, .woocommerce-checkout .woocommerce .wc-proceed-to-checkout a, .woocommerce-cart .woocommerce #add_payment_method .wc-proceed-to-checkout a, .woocommerce-cart .woocommerce .wc-proceed-to-checkout a, .woocommerce-cart .woocommerce .wc-proceed-to-checkout a { margin-bottom: 0; border-radius: 0; }
+
+.woocommerce-checkout .woocommerce #add_payment_method .wc-proceed-to-checkout a:hover, .woocommerce-checkout .woocommerce .wc-proceed-to-checkout a:hover, .woocommerce-checkout .woocommerce .wc-proceed-to-checkout a:hover, .woocommerce-cart .woocommerce #add_payment_method .wc-proceed-to-checkout a:hover, .woocommerce-cart .woocommerce .wc-proceed-to-checkout a:hover, .woocommerce-cart .woocommerce .wc-proceed-to-checkout a:hover { background-color: black; }
+
+.woocommerce-checkout .woocommerce .form-row .checkbox, .woocommerce-cart .woocommerce .form-row .checkbox { display: inline; font-weight: 500; }
+
+.woocommerce-checkout .woocommerce .shop_table, .woocommerce-cart .woocommerce .shop_table { border: 1px solid #ccc; margin: 0 0 20px 0; text-align: left; width: 100%; border-collapse: separate; border-radius: 0; }
+
+.woocommerce-checkout .woocommerce .shop_table tr.order-total, .woocommerce-cart .woocommerce .shop_table tr.order-total { background: #f9f9f9; }
+
+.woocommerce-checkout .woocommerce .shop_table th, .woocommerce-checkout .woocommerce .shop_table td, .woocommerce-cart .woocommerce .shop_table th, .woocommerce-cart .woocommerce .shop_table td { border-bottom: 0; font-weight: 500; }
+
+.woocommerce-checkout .woocommerce .shop_table thead th, .woocommerce-checkout .woocommerce .shop_table .order-total th, .woocommerce-cart .woocommerce .shop_table thead th, .woocommerce-cart .woocommerce .shop_table .order-total th { font-weight: 600; text-transform: uppercase; }
+
+.woocommerce-checkout .woocommerce .cart .button, .woocommerce-checkout .woocommerce #respond input#submit.alt, .woocommerce-checkout .woocommerce .button.alt, .woocommerce-cart .woocommerce .cart .button, .woocommerce-cart .woocommerce #respond input#submit.alt, .woocommerce-cart .woocommerce .button.alt { background-color: black; color: #fff; font-weight: 600; -webkit-font-smoothing: antialiased; text-transform: uppercase; }
+
+.woocommerce-checkout #add_payment_method #payment, .woocommerce-checkout #payment, .woocommerce-cart #add_payment_method #payment, .woocommerce-cart #payment { background: #f9f9f9; border-radius: 0; }
+
+.woocommerce-checkout .content, .woocommerce-cart .content { width: 100%; border: 0; }
+
+.woocommerce-checkout h3#order_review_heading, .woocommerce-cart h3#order_review_heading { display: none; }
+
+.woocommerce-checkout div#customer_details, .woocommerce-cart div#customer_details { float: left; width: 50%; border-right: 25px solid white; }
+
+.woocommerce-checkout div#order_review, .woocommerce-cart div#order_review { float: left; width: 50%; border-left: 25px solid white; }
+
+#alg_currency_selector { display: inline-block; }
+
+#alg_currency_selector select { border: 1px solid #ccc; border-radius: 0; appearance: none; -webkit-appearance: none; background: #ffffff; padding: 4px 20px 4px 10px; background-image: url(assets/arrow_down.svg); background-position: right center; background-repeat: no-repeat; background-size: 20px; color: black; text-transform: uppercase; font-size: 14px; outline: 0; }
+
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
@@ -718,7 +797,7 @@ a:hover, a:active { outline: 0; }
 
 #colophon .social { float: left; }
 
-#colophon .footer-links { float: right; }
+#colophon .footer-links { float: right; margin: 8px 0px; }
 
 #colophon .footer-links .menu-footer-container { float: left; }
 

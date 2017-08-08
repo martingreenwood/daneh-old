@@ -6,9 +6,11 @@ input[type="search"],
 textarea {
 	color: $text-input;
 	border: 1px solid $border-input;
+	outline: 0;
+	box-shadow: none;
 
 	&:focus {
-
+		box-shadow: none;
 	}
 }
 
@@ -21,5 +23,12 @@ input[type="search"] {
 }
 
 textarea {
-	
+	outline: 0;
+	box-shadow: none;
+	color: $text-input;
+	border: 1px solid $border-input;
+
+	&:focus {
+		box-shadow: none;
+	}
 }

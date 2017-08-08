@@ -21,6 +21,16 @@
 		"oAP": "\/archive.php",
 		"oF": 0
 		},
+	"\/assets\/arrow_down.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/arrow_down.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/fonts\/Anodyne.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -1867,6 +1877,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/sass\/site\/primary\/pages\/_blog.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/site\/primary\/pages\/_blog.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/sass\/site\/primary\/pages\/_collections.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2100,6 +2123,18 @@
 		"oAP": "\/page-about.php",
 		"oF": 0
 		},
+	"\/page-cart.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-cart.php",
+		"oF": 0
+		},
+	"\/page-checkout.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-checkout.php",
+		"oF": 0
+		},
 	"\/page-collections.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -2275,10 +2310,22 @@
 		"oAP": "\/template-parts\/content-search.php",
 		"oF": 0
 		},
+	"\/template-parts\/content-single.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-single.php",
+		"oF": 0
+		},
 	"\/template-parts\/content-video.php": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/template-parts\/content-video.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-woopage.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-woopage.php",
 		"oF": 0
 		},
 	"\/template-parts\/content.php": {

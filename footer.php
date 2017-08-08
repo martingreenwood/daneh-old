@@ -17,7 +17,7 @@
 		<div class="container">
 
 			<div class="social">
-			
+				Select Currency: <?php echo do_shortcode( '[woocommerce_currency_switcher_drop_down_box]' ); ?>
 			</div>
 
 			<div class="footer-links">

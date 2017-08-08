@@ -14,7 +14,7 @@ select {
 }
 
 label {
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: $small-spacing / 2;
 
   &.required::after {
@@ -30,8 +30,6 @@ label {
 select[multiple=multiple] {
   background-color: $base-background-color;
   border: $base-border;
-  border-radius: $base-border-radius;
-  box-shadow: $form-box-shadow;
   box-sizing: border-box;
   font-family: $base-font-family;
   font-size: $base-font-size;

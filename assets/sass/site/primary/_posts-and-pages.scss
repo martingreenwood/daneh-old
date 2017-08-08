@@ -1,6 +1,6 @@
 #content {
 	height: 100vh;
-	padding-top: 87px;
+	padding-top: 80px;
 	padding-bottom: 56px;
 	position: relative;
 	background-color: $site-border-color;
@@ -27,9 +27,11 @@
 
 #main {
 	background: white;
+	position: relative;
 }
 
-.page {
+.page, .single {
+
 	.featureimage {
 		width: 50%;
 		border-right: 25px solid $site-border-color;
@@ -38,6 +40,7 @@
 	.content {
 		width: 50%;
 		border-left: 25px solid $site-border-color;
+		overflow: scroll;
 
 		.split {
 			height: 50%;
@@ -91,6 +94,11 @@
 ## Press
 --------------------------------------------------------------*/
 @import "pages/press";
+
+/*--------------------------------------------------------------
+## Diary (blog)
+--------------------------------------------------------------*/
+@import "pages/blog";
 
 /*--------------------------------------------------------------
 ## WooCommerce
