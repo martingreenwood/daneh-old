@@ -678,6 +678,10 @@ a.wcmenucart-contents { color: #77a464; }
 
 .woocommerce.woocommerce-page #content .product .images .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image a, .woocommerce.woocommerce-page #content .product .images .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image img { height: 100%; display: block; }
 
+.woocommerce.woocommerce-page #content .product .images .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image a:after { content: ""; opacity: 0; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.4); background-image: url(assets/plus-icon.svg); background-repeat: no-repeat; background-size: 36px; background-position: center; }
+
+.woocommerce.woocommerce-page #content .product .images .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image a:hover:after { opacity: 1; }
+
 .woocommerce.woocommerce-page #content .product .images .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image img { opacity: 0; }
 
 .woocommerce.woocommerce-page #content .product .images .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:first-of-type { display: block; }

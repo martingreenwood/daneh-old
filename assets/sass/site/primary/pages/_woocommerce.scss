@@ -51,6 +51,31 @@ a.wcmenucart-contents {
 							display: block;
 						}
 
+						a {
+							
+							&:after {
+								content: "";
+								opacity: 0;
+								width: 100%;
+								height: 100%;
+								position: absolute;
+								top: 0;
+								left: 0;
+								background-color: rgba(0,0,0,0.4);
+								background-image: url(assets/plus-icon.svg);
+								background-repeat: no-repeat;
+								background-size: 36px;
+								background-position: center;
+							}
+
+							&:hover {
+								
+								&:after {
+									opacity: 1;
+								}
+							}
+						}
+
 						img {
 							opacity: 0;
 						}
