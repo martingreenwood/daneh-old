@@ -17,7 +17,26 @@
 		<div class="container">
 
 			<div class="social">
-				Select Currency: <?php echo do_shortcode( '[woocommerce_currency_switcher_drop_down_box]' ); ?>
+				<ul>
+				<?php if (get_field( 'google', 'options' )): ?>
+					<li><a href="<?php echo get_field( 'google', 'options' ); ?>"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+				<?php endif; ?>
+				<?php if (get_field( 'facebook', 'options' )): ?>
+					<li><a href="<?php echo get_field( 'facebook', 'options' ); ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<?php endif; ?>
+				<?php if (get_field( 'instagram', 'options' )): ?>
+					<li><a href="<?php echo get_field( 'instagram', 'options' ); ?>"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				<?php endif; ?>
+				<?php if (get_field( 'twitter', 'options' )): ?>
+					<li><a href="<?php echo get_field( 'twitter', 'options' ); ?>"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<?php endif; ?>
+				<?php if (get_field( 'tumblr', 'options' )): ?>
+					<li><a href="<?php echo get_field( 'tumblr', 'options' ); ?>"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+				<?php endif; ?>
+				<?php if (get_field( 'youtube', 'options' )): ?>
+					<li><a href="<?php echo get_field( 'youtube', 'options' ); ?>"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+				<?php endif; ?>
+				</ul>
 			</div>
 
 			<div class="footer-links">

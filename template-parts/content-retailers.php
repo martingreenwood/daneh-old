@@ -11,17 +11,13 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php
-	$thumb_id = get_post_thumbnail_id();
-	$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true);
-	$thumb_url = $thumb_url_array[0];
-	?>
+	<div class="content retailers">
 
-	<div class="featureimage" style="background-image: url(<?php echo $thumb_url; ?>)">
+		<header>
+			<h1>RETAILERS &amp; STOCKISTS</h1>
+			<hr>
+		</header>
 		
-	</div>
-
-	<div class="content">
 		<?php
 		$count = 1;
 		$loop = new WP_Query( 

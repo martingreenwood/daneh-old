@@ -75,11 +75,38 @@
 		"oAP": "\/assets\/fonts\/preview.html",
 		"oF": 0
 		},
+	"\/assets\/js\/app-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/app-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/app.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/app-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/assets\/js\/customizer.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/assets\/js\/customizer-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/navigation-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/navigation-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1936,6 +1963,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/sass\/site\/primary\/pages\/_diary.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/site\/primary\/pages\/_diary.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/sass\/site\/primary\/pages\/_home.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1971,6 +2011,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/sass\/site\/primary\/pages\/_retailers.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/site\/primary\/pages\/_video.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/site\/primary\/pages\/_video.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2049,6 +2102,146 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/sass\/typography\/_typography.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/slick\/ajax-loader.gif": {
+		"ft": 4194304,
+		"iS": 4178,
+		"oA": 0,
+		"oAP": "\/assets\/slick\/ajax-loader.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/slick\/config.rb": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/slick\/config.rb",
+		"oF": 0
+		},
+	"\/assets\/slick\/fonts\/slick.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/slick\/fonts\/slick.eot",
+		"oF": 0
+		},
+	"\/assets\/slick\/fonts\/slick.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/slick\/fonts\/slick.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/slick\/fonts\/slick.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/slick\/fonts\/slick.ttf",
+		"oF": 0
+		},
+	"\/assets\/slick\/fonts\/slick.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/slick\/fonts\/slick.woff",
+		"oF": 0
+		},
+	"\/assets\/slick\/slick-theme.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/slick\/slick-theme-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/slick\/slick-theme.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/assets\/slick\/slick-theme.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/slick\/slick-theme.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/slick\/slick-theme.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/slick\/slick.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/slick\/slick-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/slick\/slick.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/slick\/slick-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/slick\/slick.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/assets\/slick\/slick.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/slick\/slick.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/slick\/slick.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/slick\/slick.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/slick\/slick.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2254,6 +2447,24 @@
 		"oAP": "\/sidebar.php",
 		"oF": 0
 		},
+	"\/single-collections.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/single-collections.php",
+		"oF": 0
+		},
+	"\/single-press.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/single-press.php",
+		"oF": 0
+		},
+	"\/single-videos.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/single-videos.php",
+		"oF": 0
+		},
 	"\/single.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -2328,6 +2539,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/template-parts\/content-search.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-single-collection.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-single-collection.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-single-press.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-single-press.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-single-video.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-single-video.php",
 		"oF": 0
 		},
 	"\/template-parts\/content-single.php": {

@@ -1,0 +1,29 @@
+.single-post {
+
+	#content {
+		height: auto;
+	}
+
+	.press-peice {
+
+		@include outer-container(1170px);
+		margin: 0 auto;
+		text-align: center;
+
+		header {
+			margin: 40px;
+
+			hr {
+				background-color: #ccc;
+				width: 20%;
+				margin: 40px auto;
+			}
+		}
+
+	}
+
+	#colophon {
+		position: relative;
+	}
+
+}

@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="press-peice">
+	<div class="video-peice">
 
 		<header>
 			<?php

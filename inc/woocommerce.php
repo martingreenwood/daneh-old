@@ -57,7 +57,7 @@ function daneh_custom_post_type()
 			'public'      => true,
 			'has_archive' => false,
 			'menu_icon'   => 'dashicons-book',
-			'supports'    => array( 'title', 'thumbnail' ),
+			'supports'    => array( 'title', 'thumbnail', 'editor' ),
 		]
 	);
 }

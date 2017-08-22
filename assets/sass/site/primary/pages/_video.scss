@@ -1,4 +1,4 @@
-.press {
+.video {
 
 	.row {
 		position: relative;
@@ -49,13 +49,13 @@
 }
 
 
-.single-press {
+.single-videos {
 
 	#content {
 		height: auto;
 	}
 
-	.press-peice {
+	.video-peice {
 
 		@include outer-container(1170px);
 		margin: 0 auto;

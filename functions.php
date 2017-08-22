@@ -115,10 +115,18 @@ add_action( 'widgets_init', 'daneh_widgets_init' );
  */
 function daneh_scripts() {
 	wp_enqueue_style( 'daneh-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'featherlight-css', '//cdn.rawgit.com/noelboss/featherlight/1.7.8/release/featherlight.min.css' );
+	wp_enqueue_style( 'featherlight-gallery-css', '//cdn.rawgit.com/noelboss/featherlight/1.7.8/release/featherlight.gallery.min.css' );
+	wp_enqueue_style( 'slick-css', get_template_directory_uri() . '/assets/slick/slick.css' );
+	wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/assets/slick/slick-theme.css' );
 
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'daneh-font-awesome', 'https://use.fontawesome.com/9abff3b772.js', '', '', true );
-	wp_enqueue_script( 'daneh-navigation', get_template_directory_uri() . '/assets/js/navigation.js', '', '', true );
+	wp_enqueue_script( 'font-awesome', '//use.fontawesome.com/9abff3b772.js', '', '', true );
+	wp_enqueue_script( 'featherlight-ks', '//cdn.rawgit.com/noelboss/featherlight/1.7.8/release/featherlight.min.js', array( 'jquery' ), '1.7.8', true );
+	wp_enqueue_script( 'featherlight-gallery-js', '//cdn.rawgit.com/noelboss/featherlight/1.7.8/release/featherlight.gallery.min.js', array( 'jquery' ), '1.7.8', true );
+	wp_enqueue_script( 'navigation', get_template_directory_uri() . '/assets/js/navigation.js', '', '', true );
+	wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/assets/slick/slick.min.js', '', '', true );
+	wp_enqueue_script( 'daneh-app', get_template_directory_uri() . '/assets/js/app.js', '', '', true );
 
 }
 add_action( 'wp_enqueue_scripts', 'daneh_scripts' );

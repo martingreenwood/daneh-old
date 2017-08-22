@@ -1,34 +1,22 @@
 .retailers {
 
-	.featureimage {
-		width: 50%;
-		border-right: 25px solid $site-border-color;
-	}
-
 	.content {
-		width: 50%;
-		border-left: 25px solid $site-border-color;
 
-		.split {
-			height: 50%;
+		@include outer-container(1170px);
+		margin: 0 auto;
+		text-align: center;
+		float: none;
+		border: 0;
 
-			&.top {
-				border-bottom: 25px solid $site-border-color;
-			}
+		header {
+			margin: 40px;
 
-			&.bottom {
-				border-top: 25px solid $site-border-color;
-				background-size: cover;
-				background-position: top;
+			hr {
+				background-color: #ccc;
+				width: 20%;
+				margin: 40px auto;
 			}
 		}
-	}
-
-	.content, .featureimage {
-		height: 100%;
-		background-size: cover;
-		background-position: top;
-		float: left;
 	}
 
 	.row {

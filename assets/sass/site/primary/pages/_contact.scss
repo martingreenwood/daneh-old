@@ -1,5 +1,23 @@
 .contact {
 
+	.content {
+		@include outer-container(1170px);
+		margin: 0 auto;
+		text-align: center;
+		float: none;
+		border: 0;
+
+		header {
+			margin: 40px;
+
+			hr {
+				background-color: #ccc;
+				width: 20%;
+				margin: 40px auto;
+			}
+		}
+	}
+
 	#gform_1 {
 		background: #f9f9f9;
 		padding: 20px;
@@ -32,31 +50,5 @@
 	.featureimage {
 		width: 50%;
 		border-right: 25px solid $site-border-color;
-	}
-
-	.content {
-		width: 50%;
-		border-left: 25px solid $site-border-color;
-
-		.split {
-			height: 50%;
-
-			&.top {
-				border-bottom: 25px solid $site-border-color;
-			}
-
-			&.bottom {
-				border-top: 25px solid $site-border-color;
-				background-size: cover;
-				background-position: center;
-			}
-		}
-	}
-
-	.content, .featureimage {
-		height: 100%;
-		background-size: cover;
-		background-position: top;
-		float: left;
 	}
 }

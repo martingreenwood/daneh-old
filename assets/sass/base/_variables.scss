@@ -32,8 +32,8 @@ $light-gray: #ddd;
 $site-border-color: #fff;
 
 $color-link: $brand-primary;
-$link-hover: darken($brand-primary, 10%);
-$link-visited: darken($brand-primary, 10%);
+$link-hover: $brand-primary;
+$link-visited: $brand-primary;
 
 // Backgrounds
 $background-color: #ffffff;
