@@ -9,7 +9,11 @@
 		border: 0;
 
 		header {
-			margin: 40px;
+			margin: 40px 0;
+
+			@include media($medium-screen-up) {
+				margin: 40px;
+			}
 
 			hr {
 				background-color: #ccc;
@@ -23,10 +27,14 @@
 		position: relative;
 
 		.retailer {
-			@include span-columns(6);
+			@include span-columns(12);
 			float: left;
 			margin-bottom: 30px;
 			position: relative;
+
+			@include media($medium-screen-up) {
+				@include span-columns(6);
+			}
 
 			a {
 				text-decoration: none;
@@ -39,6 +47,7 @@
 				p {
 					color: $brand-primary;
 					margin-bottom: 0;
+					overflow: hidden;
 				}
 			}
 		}

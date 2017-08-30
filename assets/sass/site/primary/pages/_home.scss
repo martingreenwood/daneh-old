@@ -1,4 +1,13 @@
 .home {
+	height: 100vh;
+
+	.page {
+		///height: 100vh;
+	}
+
+	#content {
+		padding-bottom: 0;
+	}
 
 	#home_page_box_image {
 		width: 70%;

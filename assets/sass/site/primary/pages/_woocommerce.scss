@@ -7,10 +7,17 @@ a.wcmenucart-contents {
 	#content {
 
 		.woocommerce-error, .woocommerce-info, .woocommerce-message {
-			position: absolute;
+			position: fixed;
 			top: 0;
+			left: 0;
 			z-index: 41;
 			width: 100%;
+			font-size: 11px;
+
+			@include media($medium-screen-up) {
+				position: absolute;
+				font-size: 14px;
+			}
 			
 			.button {
 				float: right;
@@ -137,8 +144,12 @@ a.wcmenucart-contents {
 	.prod-links {
 
 		p.next {
-			right: -40px;
+			right: 10px;
 			float: right;
+
+			@include media($medium-screen-up) {
+				right: -40px;
+			}
 
 			a {
 				background-image: url('assets/right-chevron.svg');
@@ -146,8 +157,12 @@ a.wcmenucart-contents {
 		}
 
 		p.prev {
-			left: -40px;
+			left: 10px;
 			float: left;
+
+			@include media($medium-screen-up) {
+				left: -40px;
+			}
 
 			a {
 				background-image: url('assets/left-chevron.svg');
@@ -165,10 +180,14 @@ a.wcmenucart-contents {
 
 		p {
 			margin: 0;
-			position: absolute;
+			position: fixed;
 			line-height: 1;
 			top: 50%;
 			margin-top: -25px;
+
+			@include media($medium-screen-up) {
+				position: absolute;
+			}
 		}
 	}
 
@@ -178,7 +197,23 @@ a.wcmenucart-contents {
 			margin-bottom: 0;
 
 			li {
-				@include span-columns(3);
+				@include span-columns(12);
+				margin-bottom: 15px;
+
+				@include media($medium-screen-up) {
+					@include span-columns(6);
+				}
+
+				@media screen and (max-width: 960px) {
+					&:nth-child(2n) {
+						margin-right: 0;
+					}
+				}
+
+				@include media($large-screen-up) {
+					@include span-columns(3);
+					margin-bottom: 30px;
+				}
 
 				&.last {
 					margin-right: 0;
@@ -199,13 +234,24 @@ a.wcmenucart-contents {
 			height: 100%;
 
 			.featureimage {
-				width: 50%;
-				border-right: 25px solid $site-border-color;
+				width: 100%;
+				height: 300px;
+
+				@include media($medium-screen-up) {
+					width: 50%;
+					height: 100%;
+					border-right: 25px solid $site-border-color;
+				}
 			}
 
 			.content {
-				width: 50%;
-				border-left: 25px solid $site-border-color;
+				width: 100%;
+
+				@include media($medium-screen-up) {
+					width: 50%;
+					border-left: 25px solid $site-border-color;
+					height: 100%;
+				}
 
 				.split {
 					height: 50%;
@@ -223,25 +269,33 @@ a.wcmenucart-contents {
 			}
 
 			.content, .featureimage {
-				height: 100%;
 				background-size: cover;
 				background-position: top;
 				float: left;
 			}
 
+			.content {
+				@include media($medium-screen-up) {
+				}
+			}
+
 			.entry-summary {
 				margin-bottom: 0;
 				float: left;
-				width: 75%;
+				width: 100%;
+
+				@include media($medium-screen-up) {
+					width: 75%;
+				}
 
 				h1 {
-					font-size: 36px;
+					font-size: 18px;
 					margin: 0 0 5px;
 					line-height: 1.2;
 				}
 
 				h2 {
-					font-size: 22px;
+					font-size: 16px;
 					margin: 0 0 30px;
 					line-height: 1.2;
 					color: $text-color;
@@ -286,7 +340,7 @@ a.wcmenucart-contents {
 							color: $text-color;
 							margin-top: -20px;
 							opacity: 0;
-							font-size: 27px;
+							font-size: 18px;
 							padding: 0 50px;
 							line-height: 1;
 							-webkit-transition: all 300ms ease-in-out;
@@ -320,6 +374,10 @@ a.wcmenucart-contents {
 				}
 			}
 		}
+	}
+
+	#colophon {
+		position: relative;
 	}
 }
 

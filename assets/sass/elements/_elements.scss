@@ -10,7 +10,10 @@ html {
 
 body {
 	background: $background-color; /* Fallback for when there is no custom background color defined. */
-	min-height: 100vh; // makes screen at least 100% of the screen height 
+	// min-height: 100vh; // makes screen at least 100% of the screen height 
+	@include media($medium-screen-up) {
+		min-height: 100vh;
+	}
 }
 
 blockquote, q {

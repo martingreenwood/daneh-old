@@ -10,9 +10,20 @@
 
 	.site-branding {
 		float: left;
+		width: 100%;
+		text-align: center;
+
+		@include media($medium-screen-up) {
+			width: auto;
+			text-align: left;
+		}
 
 		img {
-			display: block;
+			display: inline-block;
+			
+			@include media($medium-screen-up) {
+				display: block;
+			}
 		}
 
 		.custom-logo-link {
