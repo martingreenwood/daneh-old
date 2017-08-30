@@ -1,1 +1,1 @@
-!function($){$("a.gallery").featherlightGallery({previousIcon:"&#9664;",nextIcon:"&#9654;",galleryFadeIn:100,galleryFadeOut:300})}(jQuery);
+!function($){$("a.gallery").featherlightGallery({previousIcon:"&#9664;",nextIcon:"&#9654;",galleryFadeIn:100,galleryFadeOut:300})}(jQuery),function($){$(".single #slides").slick({centerMode:!0,centerPadding:"60px",slidesToShow:3,responsive:[{breakpoint:768,settings:{arrows:!1,centerMode:!0,centerPadding:"40px",slidesToShow:3}},{breakpoint:480,settings:{arrows:!1,centerMode:!0,centerPadding:"40px",slidesToShow:1}}]})}(jQuery);

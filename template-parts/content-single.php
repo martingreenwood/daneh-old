@@ -30,6 +30,21 @@
 		<?php
 			the_content();
 		?>
+
+		<?php if (get_field( 'enable_image_slider' )): ?>
+		<section id="slides">
+			<?php 
+			$images = get_field('image_slider');
+			$size = 'full'; // (thumbnail, medium, large, full or custom size)
+			if( $images ): 
+			foreach( $images as $image ): ?>
+			<div class="slide">
+				<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+			</div>
+			<?php endforeach;
+			endif; ?>
+		</section>
+		<?php endif; ?>
 	</div>
 
 </article>
