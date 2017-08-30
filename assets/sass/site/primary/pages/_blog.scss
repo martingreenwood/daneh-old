@@ -1,9 +1,5 @@
 .blog, .archive {
 
-	.slick-slider {
-		margin-top: 50px;
-	}
-
 	#primary {
 
 		.row {
@@ -86,6 +82,10 @@
 }
 
 .single {
+
+	#slides {
+		margin-top: 50px;
+	}
 
 	#primary h1, #main h1, .hentry h1 {
 		margin-top: 0;
