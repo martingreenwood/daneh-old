@@ -544,6 +544,12 @@ a:hover, a:active { outline: 0; }
 --------------------------------------------------------------*/
 .home { height: 100vh; }
 
+.home div#video { width: 100%; height: calc(100% - 74px); }
+
+.home video { position: fixed; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: 1; border-left: 50px solid white; transform: translateX(-50%) translateY(-50%); background-size: cover; transition: 1s opacity; }
+
+.home .stopfade { opacity: .5; }
+
 .home #content { padding-bottom: 0; }
 
 .home #home_page_box_image { width: 70%; border-right: 25px solid #fff; }

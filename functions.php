@@ -41,6 +41,7 @@ function daneh_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'thumbs', 500, 500, true );
 	add_image_size( 'collection', 500, 900, true );
 	add_image_size( 'press', 370, 666, true );
 

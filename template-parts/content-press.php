@@ -28,7 +28,7 @@
 		<div class="glossy">
 			<?php $pressfile = get_field( 'press_pdf' ); ?>
 			<a href="<?php the_permalink(); ?>">
-				<?php the_post_thumbnail( 'press' ); ?>
+				<?php the_post_thumbnail( 'thumbs' ); ?>
 				<div class="overlay">
 					<div class="table"><div class="cell middle">
 						<?php the_title( ); ?>

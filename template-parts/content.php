@@ -13,7 +13,7 @@
 
 	<a href="<?php the_permalink(); ?>">
 		
-		<?php the_post_thumbnail( 'collection' ); ?>
+		<?php the_post_thumbnail( 'thumbs' ); ?>
 
 		<div class="overlay">
 			<div class="table"><div class="cell middle">
