@@ -8,9 +8,21 @@
 		position: relative;
 		height: 100%;
 
+		.slide {
+			height: 100vh;
+
+			@include media($medium-screen-up) {
+				height: 100%;
+			}
+
+			div {
+				height: 100%;
+			}
+		}
+
 		.collection {
-			@include span-columns(12);
-			float: left;
+			//@include span-columns(12);
+			//float: left;
 			text-align: center;
 			position: relative;
 			height: 100%;
@@ -19,7 +31,7 @@
 			background-position: center;
 
 			@include media($medium-screen-up) {
-				@include span-columns(3);
+				//@include span-columns(3);
 			}
 
 			img {

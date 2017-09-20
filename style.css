@@ -608,12 +608,13 @@ a:hover, a:active { outline: 0; }
 
 .collections .row { position: relative; height: 100%; }
 
-.collections .row .collection { float: left; display: block; margin-right: 2.1276595745%; width: 100%; float: left; text-align: center; position: relative; height: 100%; background-size: cover; background-position: center; }
+.collections .row .slide { height: 100vh; }
 
-.collections .row .collection:last-child { margin-right: 0; }
+@media screen and (min-width: 767px) { .collections .row .slide { height: 100%; } }
 
-@media screen and (min-width: 767px) { .collections .row .collection { float: left; display: block; margin-right: 2.1276595745%; width: 23.4042553191%; }
-  .collections .row .collection:last-child { margin-right: 0; } }
+.collections .row .slide div { height: 100%; }
+
+.collections .row .collection { text-align: center; position: relative; height: 100%; background-size: cover; background-position: center; }
 
 .collections .row .collection img { display: block; }
 
@@ -807,7 +808,7 @@ a.wcmenucart-contents { color: inherit; }
 
 .prod-links p.prev a { background-image: url("assets/left-chevron.svg"); }
 
-.prod-links a { display: block; width: 30px; height: 49px; background-repeat: no-repeat; background-position: center; background-size: auto 100%; text-indent: -9999px; }
+.prod-links a { display: block; width: 30px; height: 49px; background-repeat: no-repeat; background-position: center; background-size: auto 100%; text-indent: -9999px; cursor: pointer; }
 
 .prod-links p { margin: 0; position: fixed; line-height: 1; top: 50%; margin-top: -25px; }
 
