@@ -2,6 +2,57 @@ a.wcmenucart-contents {
 	color: inherit;	
 }
 
+.prod-links {
+
+	p.next {
+		right: 10px;
+		float: right;
+
+		@include media($medium-screen-up) {
+			right: -40px;
+		}
+
+		a {
+			background-image: url('assets/right-chevron.svg');
+		}
+	}
+
+	p.prev {
+		left: 10px;
+		float: left;
+
+		@include media($medium-screen-up) {
+			left: -40px;
+		}
+
+		a {
+			background-image: url('assets/left-chevron.svg');
+		}
+	}
+
+	a {
+		display: block;
+		width: 30px;
+		height: 49px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: auto 100%;
+		text-indent: -9999px;
+	}
+
+	p {
+		margin: 0;
+		position: fixed;
+		line-height: 1;
+		top: 50%;
+		margin-top: -25px;
+
+		@include media($medium-screen-up) {
+			position: absolute;
+		}
+	}
+}
+
 .woocommerce.woocommerce-page {
 
 	#content {
@@ -141,56 +192,6 @@ a.wcmenucart-contents {
 		}
 	}
 
-	.prod-links {
-
-		p.next {
-			right: 10px;
-			float: right;
-
-			@include media($medium-screen-up) {
-				right: -40px;
-			}
-
-			a {
-				background-image: url('assets/right-chevron.svg');
-			}
-		}
-
-		p.prev {
-			left: 10px;
-			float: left;
-
-			@include media($medium-screen-up) {
-				left: -40px;
-			}
-
-			a {
-				background-image: url('assets/left-chevron.svg');
-			}
-		}
-
-		a {
-			display: block;
-			width: 30px;
-			height: 49px;
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: auto 100%;
-		}
-
-		p {
-			margin: 0;
-			position: fixed;
-			line-height: 1;
-			top: 50%;
-			margin-top: -25px;
-
-			@include media($medium-screen-up) {
-				position: absolute;
-			}
-		}
-	}
-
 	#primary {
 
 		.products {
@@ -283,6 +284,7 @@ a.wcmenucart-contents {
 				margin-bottom: 0;
 				float: left;
 				width: 100%;
+				position: relative;
 
 				@include media($medium-screen-up) {
 					width: 75%;
@@ -299,6 +301,32 @@ a.wcmenucart-contents {
 					margin: 0 0 30px;
 					line-height: 1.2;
 					color: $text-color;
+				}
+
+				.button-wrapper {
+					margin: 0;
+					position: inherit;
+					bottom: 0;
+					right: 0;
+					margin-top: 20px;
+					margin-bottom: 10px;
+					margin-right: 10px;
+					display: inline-block;;
+
+					a, #chart-button {
+						background: transparent;
+						color: black;
+						padding: 0;
+						font-weight: 700;
+						border-radius: 0;
+						text-decoration: none;
+						
+						&:hover {
+							background: transparent;
+							color: black;
+							border-radius: 0;
+						}
+					}
 				}
 			}
 		}
@@ -486,5 +514,17 @@ a.wcmenucart-contents {
 		text-transform: uppercase;
 		font-size: 14px;
 		outline: 0;
+	}
+}
+
+
+.woocommerce.single-product {
+
+	.product .cart .variations {
+		width: auto;	
+	}
+
+	#colophon {
+		position: fixed;
 	}
 }

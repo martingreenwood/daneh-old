@@ -11,7 +11,8 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php
+	<?php 
+	/*
 	$count = 1;
 	$loop = new WP_Query( 
 		array( 
@@ -44,5 +45,13 @@
 		if ($count%4 != 1) echo "</div>"; //This is to ensure there is no open div if the number of elements in terms is not a multiple of 4
 	endif;
 	wp_reset_postdata();
+	*/
 	?>
+
+	<div class="table">
+		<div class="cell middle">
+			<center><?php the_content( ); ?></center>
+		</div>
+	</div>
+
 </article>

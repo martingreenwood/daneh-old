@@ -34,6 +34,12 @@ function woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
 
+function my_custom_wc_get_variations_args( $args ) {
+    $args['order'] = 'ASC';
+    return $args;
+}
+add_filter( 'woocommerce_ajax_admin_get_variations_args', 'my_custom_wc_get_variations_args' );
+
 function daneh_custom_post_type()
 {
 	register_post_type('retailers',
@@ -201,6 +207,12 @@ function new_loop_shop_per_page( $cols ) {
   return $cols;
 }
 
+
+function add_tcs() {
+	?>
+		<div class='button-wrapper'><a target='_blank' href='<?php echo home_url( 'shipping' ); ?>'>View Shipping &amp; Returns Policy</a></div>
+	<?php
+}
 
 
 /**
