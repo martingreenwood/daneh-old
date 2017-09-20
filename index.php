@@ -17,41 +17,31 @@ get_header(); ?>
 	<div id="primary" class="content-area container">
 		<main id="main" class="site-main">
 
-		<?php
-		$count = 1;
-		if ( have_posts() ) :
+			<div class="row">
+			<?php
+			if ( have_posts() ) :
 
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
-			if ($count%4 == 1) {  
-			echo "<div class='row'>";
-			}
+				/* Start the Loop */
+				while ( have_posts() ) : the_post();
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
+					get_template_part( 'template-parts/content', get_post_format() );
+				
+				endwhile;
+
+			endif; ?>
+			</div>
 			
-			if ($count%4 == 0) {
-			echo "</div>";
-			}
-			$count++;
-			endwhile;
+			<div class="news-links">
+				<p class="prev">
+					<?php echo get_next_posts_link( 'Older', $loop->max_num_pages );k ?>
+				</p>
+				<p class="next">
+					<?php echo get_previous_posts_link( 'Newer' ); ?>
+				</p>
+			</div>
 
-			if ($count%4 != 1) echo "</div>"; //This is to ensure there is no open div if the number of elements in terms is not a multiple of 4
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 
 <?php
 get_footer();

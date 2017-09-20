@@ -11,16 +11,37 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<a href="<?php the_permalink(); ?>">
-		
-		<?php the_post_thumbnail( 'thumbs' ); ?>
+	<div class="press-peice">
 
-		<div class="overlay">
-			<div class="table"><div class="cell middle">
-				<h3><?php the_title( ); ?></h3>
-				<small><?php echo get_the_date(); ?></small>
-			</div></div>
+		<header>
+			<?php
+				the_title( '<h1 class="entry-title">', '</h1>' );
+			?>
+			<hr>
+		</header>
+
+		<?php
+			the_content();
+		?>
+
+		<?php if (get_field( 'enable_image_slider' )): ?>
+		<div class="wrapper">
+			<section id="slides">
+				<?php 
+				$images = get_field('image_slider');
+				$size = 'full'; // (thumbnail, medium, large, full or custom size)
+				if( $images ): 
+				foreach( $images as $image ): ?>
+				<div class="image">
+					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+				</div>
+				<?php endforeach;
+				endif; ?>
+			</section>
+			<div class="prod-links">
+			</div>
 		</div>
-	</a>
+		<?php endif; ?>
+	</div>
 
 </article>

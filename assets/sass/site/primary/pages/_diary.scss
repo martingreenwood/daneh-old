@@ -1,12 +1,16 @@
 .single-post {
 
+	.wrapper {
+		position: relative;
+	}
+
 	#content {
 		height: auto;
 	}
 
 	.press-peice {
 
-		@include outer-container(1170px);
+		@include outer-container(1024px);
 		margin: 0 auto;
 		text-align: center;
 

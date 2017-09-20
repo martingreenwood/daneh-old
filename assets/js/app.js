@@ -11,26 +11,22 @@
 
 (function($) {
 
-	$('.single #slides').slick({
-		centerMode: true,
-		centerPadding: '60px',
-		slidesToShow: 3,
+	$('#slides').slick({
+		slidesToShow: 4,
+		appendArrows: ".prod-links",
+		prevArrow: "<p class='prev'><a rel='prev'></a></p>",
+		nextArrow: "<p class='next'><a rel='next'></a></p>",
+
 		responsive: [
 		{
 			breakpoint: 768,
 			settings: {
-				arrows: false,
-				centerMode: true,
-				centerPadding: '40px',
 				slidesToShow: 3
 			}
 		},
 		{
 			breakpoint: 480,
 			settings: {
-				arrows: false,
-				centerMode: true,
-				centerPadding: '40px',
 				slidesToShow: 1
 			}
 		}
