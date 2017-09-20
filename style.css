@@ -622,11 +622,11 @@ a:hover, a:active { outline: 0; }
 
 .collections .row .collection:hover .overlay { opacity: 1; }
 
-.collections header { margin: 40px auto; max-width: 500px; text-align: center; }
+.collections .page-header { margin: 40px auto; max-width: 500px; text-align: center; }
 
-.collections header p { margin: 10px 0; }
+.collections .page-header p { margin: 10px 0; }
 
-.collections header hr { background-color: #ccc; width: 20%; margin: 40px auto; }
+.collections .page-header hr { background-color: #ccc; width: 20%; margin: 40px auto; }
 
 .collections ul.items { list-style: none; margin: 0; }
 
@@ -1070,5 +1070,7 @@ embed, iframe, object { max-width: 100%; }
 .gallery-columns-9 .gallery-item { max-width: 11.11%; }
 
 .gallery-caption { display: block; }
+
+body .featherlight:last-of-type { background: rgba(255, 255, 255, 0.8); }
 
 /*# sourceMappingURL=style.css.map */
