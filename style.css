@@ -718,6 +718,12 @@ a:hover, a:active { outline: 0; }
 /*--------------------------------------------------------------
 ## Video
 --------------------------------------------------------------*/
+.video .page-header { margin: 40px auto; max-width: 500px; text-align: center; }
+
+.video .page-header p { margin: 10px 0; }
+
+.video .page-header hr { background-color: #ccc; width: 20%; margin: 40px auto; }
+
 .video .row { position: relative; }
 
 .video .row .glossy { float: left; display: block; margin-right: 2.1276595745%; width: 100%; float: left; text-align: center; margin-bottom: 15px; position: relative; }
@@ -738,8 +744,6 @@ a:hover, a:active { outline: 0; }
 
 .video .row .glossy:hover .overlay { opacity: 1; }
 
-.video #colophon { position: relative; }
-
 .single-videos #content { height: auto; }
 
 .single-videos .video-peice { max-width: 1170px; margin-left: auto; margin-right: auto; margin: 0 auto; text-align: center; }
@@ -749,8 +753,6 @@ a:hover, a:active { outline: 0; }
 .single-videos .video-peice header { margin: 40px; }
 
 .single-videos .video-peice header hr { background-color: #ccc; width: 20%; margin: 40px auto; }
-
-.single-videos #colophon { position: relative; }
 
 /*--------------------------------------------------------------
 ## Diary (blog)

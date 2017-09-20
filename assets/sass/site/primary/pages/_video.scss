@@ -1,5 +1,21 @@
 .video {
 
+	.page-header {
+		margin: 40px auto;
+		max-width: 500px;
+		text-align: center;
+
+		p {
+			margin:10px 0;
+		}
+
+		hr {
+			background-color: #ccc;
+			width: 20%;
+			margin: 40px auto;
+		}
+	}
+
 	.row {
 		position: relative;
 
@@ -60,7 +76,7 @@
 	}
 
 	#colophon {
-		position: relative;
+		//position: relative;
 	}
 }
 
@@ -90,7 +106,7 @@
 	}
 
 	#colophon {
-		position: relative;
+		//position: relative;
 	}
 
 }

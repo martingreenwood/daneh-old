@@ -47,11 +47,11 @@
 	wp_reset_postdata();
 	*/
 	?>
+		<header class="page-header">
+			<h1>Latest Showreel</h1>
+			<hr>
+		</header>
 
-	<div class="table">
-		<div class="cell middle">
-			<center><?php the_content( ); ?></center>
-		</div>
-	</div>
+		<center><?php the_content( ); ?></center>
 
 </article>
