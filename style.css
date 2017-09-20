@@ -564,6 +564,19 @@ a:hover, a:active { outline: 0; }
 ## About
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+## About
+--------------------------------------------------------------*/
+.shipping .content, .legal .content, .terms .content, .cookies .content { max-width: 1170px; margin-left: auto; margin-right: auto; margin: 0 auto; text-align: center; float: none; border: 0; }
+
+.shipping .content::after, .legal .content::after, .terms .content::after, .cookies .content::after { clear: both; content: ""; display: table; }
+
+.shipping .content header, .legal .content header, .terms .content header, .cookies .content header { margin: 40px; }
+
+.shipping .content header hr, .legal .content header hr, .terms .content header hr, .cookies .content header hr { background-color: #ccc; width: 20%; margin: 40px auto; }
+
+.shipping .content ul, .legal .content ul, .terms .content ul, .cookies .content ul { list-style: none; margin: 20px 0; }
+
+/*--------------------------------------------------------------
 ## Contact
 --------------------------------------------------------------*/
 .contact .content { max-width: 1170px; margin-left: auto; margin-right: auto; margin: 0 auto; text-align: center; float: none; border: 0; }

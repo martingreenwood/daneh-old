@@ -2007,6 +2007,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/sass\/site\/primary\/pages\/_center.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/site\/primary\/pages\/_center.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/sass\/site\/primary\/pages\/_collections.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2432,6 +2445,18 @@
 		"oAP": "\/page-contact.php",
 		"oF": 0
 		},
+	"\/page-cookies.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-cookies.php",
+		"oF": 0
+		},
+	"\/page-legal.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-legal.php",
+		"oF": 0
+		},
 	"\/page-press.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -2442,6 +2467,18 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/page-retailers.php",
+		"oF": 0
+		},
+	"\/page-shipping.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-shipping.php",
+		"oF": 0
+		},
+	"\/page-terms.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-terms.php",
 		"oF": 0
 		},
 	"\/page-video.php": {
@@ -2563,6 +2600,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/template-parts\/content-about.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-center.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-center.php",
 		"oF": 0
 		},
 	"\/template-parts\/content-collections.php": {
