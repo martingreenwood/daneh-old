@@ -71,6 +71,22 @@
 
 	// collection dingle CPT
 
+	header{
+		margin: 40px auto;
+		max-width: 500px;
+		text-align: center;
+
+		p {
+			margin:10px 0;
+		}
+
+		hr {
+			background-color: #ccc;
+			width: 20%;
+			margin: 40px auto;
+		}
+	}
+
 	ul.items {
 		list-style: none;
 		margin: 0;
@@ -142,3 +158,4 @@
 		//position: relative;
 	}
 }
+

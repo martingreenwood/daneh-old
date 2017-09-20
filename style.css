@@ -622,6 +622,12 @@ a:hover, a:active { outline: 0; }
 
 .collections .row .collection:hover .overlay { opacity: 1; }
 
+.collections header { margin: 40px auto; max-width: 500px; text-align: center; }
+
+.collections header p { margin: 10px 0; }
+
+.collections header hr { background-color: #ccc; width: 20%; margin: 40px auto; }
+
 .collections ul.items { list-style: none; margin: 0; }
 
 .collections ul.items li { float: left; display: block; margin-right: 2.1276595745%; width: 100%; float: left; text-align: center; margin-bottom: 15px; position: relative; }
@@ -985,7 +991,7 @@ a.wcmenucart-contents { color: inherit; }
 
 #colophon .social ul li .fa { font-size: 16px; }
 
-@media screen and (min-width: 767px) { #colophon .social ul li .fa { font-size: 32px; } }
+@media screen and (min-width: 767px) { #colophon .social ul li .fa { font-size: 20px; } }
 
 #colophon .footer-links { float: left; margin: 10px 0 0 0; width: 100%; }
 

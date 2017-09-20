@@ -22,7 +22,12 @@
 	</div>
 
 	<div class="content">
-		<?php the_content(); ?>
+		<div class="table">
+			<div class="cell middle">
+			<h1><?php the_title(); ?></h1>
+			<?php the_content(); ?>
+			</div>
+		</div>
 	</div>
 
 </article>
