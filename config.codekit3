@@ -2457,6 +2457,12 @@
 		"oAP": "\/page-legal.php",
 		"oF": 0
 		},
+	"\/page-login.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-login.php",
+		"oF": 0
+		},
 	"\/page-press.php": {
 		"ft": 8192,
 		"oA": 2,
