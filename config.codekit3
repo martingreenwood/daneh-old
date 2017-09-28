@@ -2487,12 +2487,6 @@
 		"oAP": "\/page-terms.php",
 		"oF": 0
 		},
-	"\/page-video.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/page-video.php",
-		"oF": 0
-		},
 	"\/page-videos.php": {
 		"ft": 8192,
 		"oA": 2,

@@ -722,31 +722,31 @@ a:hover, a:active { outline: 0; }
 /*--------------------------------------------------------------
 ## Video
 --------------------------------------------------------------*/
-.video .page-header { margin: 40px auto; max-width: 500px; text-align: center; }
+.video .page-header, .videos .page-header { margin: 40px auto; max-width: 500px; text-align: center; }
 
-.video .page-header p { margin: 10px 0; }
+.video .page-header p, .videos .page-header p { margin: 10px 0; }
 
-.video .page-header hr { background-color: #ccc; width: 20%; margin: 40px auto; }
+.video .page-header hr, .videos .page-header hr { background-color: #ccc; width: 20%; margin: 40px auto; }
 
-.video .row { position: relative; }
+.video .row, .videos .row { position: relative; }
 
-.video .row .glossy { float: left; display: block; margin-right: 2.1276595745%; width: 100%; float: left; text-align: center; margin-bottom: 15px; position: relative; }
+.video .row .glossy, .videos .row .glossy { float: left; display: block; margin-right: 2.1276595745%; width: 100%; float: left; text-align: center; margin-bottom: 15px; position: relative; }
 
-.video .row .glossy:last-child { margin-right: 0; }
+.video .row .glossy:last-child, .videos .row .glossy:last-child { margin-right: 0; }
 
-@media screen and (min-width: 767px) { .video .row .glossy { float: left; display: block; margin-right: 2.1276595745%; width: 48.9361702128%; }
-  .video .row .glossy:last-child { margin-right: 0; } }
+@media screen and (min-width: 767px) { .video .row .glossy, .videos .row .glossy { float: left; display: block; margin-right: 2.1276595745%; width: 48.9361702128%; }
+  .video .row .glossy:last-child, .videos .row .glossy:last-child { margin-right: 0; } }
 
-@media screen and (max-width: 960px) { .video .row .glossy:nth-child(2n) { margin-right: 0; } }
+@media screen and (max-width: 960px) { .video .row .glossy:nth-child(2n), .videos .row .glossy:nth-child(2n) { margin-right: 0; } }
 
-@media screen and (min-width: 959px) { .video .row .glossy { float: left; display: block; margin-right: 2.1276595745%; width: 23.4042553191%; margin-bottom: 30px; }
-  .video .row .glossy:last-child { margin-right: 0; } }
+@media screen and (min-width: 959px) { .video .row .glossy, .videos .row .glossy { float: left; display: block; margin-right: 2.1276595745%; width: 23.4042553191%; margin-bottom: 30px; }
+  .video .row .glossy:last-child, .videos .row .glossy:last-child { margin-right: 0; } }
 
-.video .row .glossy img { display: block; width: 100%; }
+.video .row .glossy img, .videos .row .glossy img { display: block; width: 100%; }
 
-.video .row .glossy .overlay { position: absolute; opacity: 0; top: 0; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.6); font-weight: 300; z-index: 5; color: #706f6f; text-transform: uppercase; font-size: 18px; -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -ms-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out; }
+.video .row .glossy .overlay, .videos .row .glossy .overlay { position: absolute; opacity: 0; top: 0; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.6); font-weight: 300; z-index: 5; color: #706f6f; text-transform: uppercase; font-size: 18px; -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -ms-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; transition: all .25s ease-in-out; }
 
-.video .row .glossy:hover .overlay { opacity: 1; }
+.video .row .glossy:hover .overlay, .videos .row .glossy:hover .overlay { opacity: 1; }
 
 .single-videos #content { height: auto; }
 

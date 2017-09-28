@@ -21,9 +21,6 @@
 				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 			endif;
 			?>
-			<div class="entry-meta">
-				<p>Posted on <?php echo get_the_date(); ?></p>
-			</div>
 			<hr>
 		</header>
 
