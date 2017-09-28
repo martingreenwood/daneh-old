@@ -29,19 +29,19 @@
 			);
 			if ( $loop->have_posts() ) :
 				while ( $loop->have_posts() ) : $loop->the_post(); 
-				if ($count == 1) {  
-				echo "<div class='big'>";
-				}
+				// if ($count == 1) {  
+				// echo "<div class='big'>";
+				// }
 				?>
-				<div class="glossy">
+				<div class="glossy <?php if ($count == 1); ?> feat <?php endif; ?>">
 					<a href="<?php the_permalink(); ?>">
 						<?php the_content(); ?>
 					</a>
 				</div>
 				<?php 
-				if ($count == 1) {
-				echo "</div>";
-				}
+				// if ($count == 1) {
+				// echo "</div>";
+				// }
 				$count++;
 				endwhile;
 
