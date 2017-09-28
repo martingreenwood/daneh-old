@@ -44,6 +44,7 @@ function daneh_setup() {
 	add_image_size( 'thumbs', 500, 500, true );
 	add_image_size( 'collection', 500, 900, true );
 	add_image_size( 'press', 370, 666, true );
+	add_image_size( 'video', 600, 400, true );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(

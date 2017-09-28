@@ -29,4 +29,38 @@
 		?>
 	</div>
 
+	<center>
+		<div class="wrapper">
+
+		<?php 
+		$count = 1;
+		$loop = new WP_Query( 
+			array( 
+				'post_type' 		=> 'videos',
+				'posts_per_page' 	=> -1,
+			) 
+		);
+		if ( $loop->have_posts() ) :
+			while ( $loop->have_posts() ) : $loop->the_post(); 
+			?>
+			<div class="glossy">
+				<a href="<?php the_permalink(); ?>">
+					<?php if (has_post_thumbnail( )): ?>
+						<?php the_post_thumbnail( 'video' ); ?>
+					<?php else: ?>
+						<img src="http://placehold.it/600x400" alt="">
+					<?php endif; ?>
+				</a>
+			</div>
+			<?php 
+			$count++;
+			endwhile;
+
+		endif;
+		wp_reset_postdata();
+		?>
+		
+		</div>
+	</center>
+
 </article>

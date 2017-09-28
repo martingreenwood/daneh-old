@@ -18,6 +18,7 @@
 		</header>
 
 		<center>
+			<div class="wrapper">
 
 			<?php 
 			$count = 1;
@@ -29,19 +30,27 @@
 			);
 			if ( $loop->have_posts() ) :
 				while ( $loop->have_posts() ) : $loop->the_post(); 
-				// if ($count == 1) {  
-				// echo "<div class='big'>";
-				// }
 				?>
-				<div class="glossy <?php if ($count == 1); ?> feat <?php endif; ?>">
-					<a href="<?php the_permalink(); ?>">
-						<?php the_content(); ?>
-					</a>
+				<?php if ($count == 1): ?>
+				<div class="row">
+				<?php endif; ?>
+					<div class="<?php if ($count == 1): ?>feat<?php else: ?>glossy<?php endif; ?>">
+						<?php if ($count == 1): ?>
+							<?php the_content( ); ?>
+						<?php else: ?>
+						<a href="<?php the_permalink(); ?>">
+							<?php if (has_post_thumbnail( )): ?>
+								<?php the_post_thumbnail( 'video' ); ?>
+							<?php else: ?>
+								<img src="http://placehold.it/600x400" alt="">
+							<?php endif; ?>
+						</a>
+						<?php endif; ?>
+					</div>
+				<?php if ($count == 1): ?>
 				</div>
+				<?php endif; ?>
 				<?php 
-				// if ($count == 1) {
-				// echo "</div>";
-				// }
 				$count++;
 				endwhile;
 
@@ -49,6 +58,7 @@
 			wp_reset_postdata();
 			?>
 			
+			</div>
 		</center>
 
 </article>
