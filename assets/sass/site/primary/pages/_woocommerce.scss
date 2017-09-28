@@ -32,8 +32,8 @@ a.wcmenucart-contents {
 
 	a {
 		display: block;
-		width: 30px;
-		height: 49px;
+		width: 20px;
+		height: 28px;
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: auto 100%;
@@ -46,7 +46,7 @@ a.wcmenucart-contents {
 		position: fixed;
 		line-height: 1;
 		top: 50%;
-		margin-top: -25px;
+		margin-top: -14px;
 
 		@include media($medium-screen-up) {
 			position: absolute;

@@ -1,7 +1,9 @@
 .shipping, 
 .legal, 
 .terms, 
-.cookies  {
+.cookies,
+.login
+{
 
 	.content {
 		@include outer-container(1170px);
@@ -25,4 +27,12 @@
 			margin: 20px 0;
 		}
 	}
+}
+
+#theme-my-login {
+	margin: 0 auto;
+}
+
+.tml .message {
+	margin-bottom: 20px;
 }

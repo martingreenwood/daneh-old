@@ -2493,6 +2493,12 @@
 		"oAP": "\/page-video.php",
 		"oF": 0
 		},
+	"\/page-videos.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-videos.php",
+		"oF": 0
+		},
 	"\/page.php": {
 		"ft": 8192,
 		"oA": 2,
