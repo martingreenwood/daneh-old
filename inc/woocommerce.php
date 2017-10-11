@@ -17,7 +17,7 @@ add_action('woocommerce_after_main_content', 'my_theme_wrapper_end', 10);
 
 function my_theme_wrapper_start() {
 	?>
-	<div id="primary" class="content-area container">
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 	<?php
 }
@@ -104,6 +104,13 @@ function daneh_custom_taxonomy_collection()  {
 	register_taxonomy_for_object_type( 'collection', 'product' );
 }
 
+// Change number or products per row to 3
+add_filter('loop_shop_columns', 'loop_columns');
+if (!function_exists('loop_columns')) {
+	function loop_columns() {
+		return 6; // 3 products per row
+	}
+}
 
 
 // REMOVE SHIT
@@ -116,11 +123,19 @@ remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 3
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
 
 remove_action( 'woocommerce_after_shop_loop_item_title' , 'woocommerce_template_loop_rating', 5 );
-remove_action( 'woocommerce_after_shop_loop_item_title' , 'woocommerce_template_loop_price', 10 );
+// remove_action( 'woocommerce_after_shop_loop_item_title' , 'woocommerce_template_loop_price', 10 );
 
 remove_action( 'woocommerce_after_shop_loop_item' , 'woocommerce_template_loop_add_to_cart', 10 );
 
 remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar'	, 10 );
+add_action( 'woocommerce_before_main_content', 'woocommerce_get_sidebar', 0 );
+
+add_action( 'init', 'bbloomer_remove_sidebar_product_pages' );
+function bbloomer_remove_sidebar_product_pages() {
+	if (is_product()) {
+		remove_action('woocommerce_sidebar','woocommerce_get_sidebar',0);
+	}
+}
 
 add_filter( 'woocommerce_show_page_title' , 'woo_hide_page_title' );
 
@@ -210,7 +225,7 @@ function new_loop_shop_per_page( $cols ) {
 
 function add_tcs() {
 	?>
-		<div class='button-wrapper'><a target='_blank' href='<?php echo home_url( 'shipping' ); ?>'>View Shipping &amp; Returns Policy</a></div>
+		<div class='button-wrapper'><a target='_blank' href='<?php echo home_url( 'shipping' ); ?>'>Shipping &amp; Returns</a></div>
 	<?php
 }
 

@@ -193,7 +193,18 @@ a.wcmenucart-contents {
 		}
 	}
 
+	#secondary {
+		width: 25%;
+		float: left;
+		border-left: 50px solid white;
+		border-right: 25px solid white;
+	}
+
 	#primary {
+		width: 75%;
+		float: right;
+		border-right: 50px solid white;
+		border-left: 25px solid white;
 
 		.products {
 			margin-bottom: 0;
@@ -203,17 +214,11 @@ a.wcmenucart-contents {
 				margin-bottom: 15px;
 
 				@include media($medium-screen-up) {
-					@include span-columns(6);
-				}
-
-				@media screen and (max-width: 960px) {
-					&:nth-child(2n) {
-						margin-right: 0;
-					}
+					@include span-columns(3);
 				}
 
 				@include media($large-screen-up) {
-					@include span-columns(3);
+					@include span-columns(2);
 					margin-bottom: 30px;
 				}
 
@@ -304,21 +309,25 @@ a.wcmenucart-contents {
 					color: $text-color;
 				}
 
+				.button-wrap {
+					position: absolute;
+					bottom: -60px;
+					width: 290px;
+					height: 50px;
+					text-align: unset;
+				}
+
 				.button-wrapper {
 					margin: 0;
-					position: inherit;
-					bottom: 0;
-					right: 0;
-					margin-top: 20px;
-					margin-bottom: 10px;
 					margin-right: 10px;
-					display: inline-block;;
+					float: left;
+					margin-top: 14px;
 
 					a, #chart-button {
 						background: transparent;
-						color: black;
+						color: inherit;
 						padding: 0;
-						font-weight: 700;
+						font-weight: inherit;
 						border-radius: 0;
 						text-decoration: none;
 						
@@ -359,24 +368,15 @@ a.wcmenucart-contents {
 							transition: all 300ms ease-in-out;
 						}
 
-						h2 {
-							padding: 0;
-							position: absolute;
-							top: 50%;
+						h2, .price {
 							text-align: center;
 							width: 100%;
-							font-weight: 300;
-							color: $text-color;
-							margin-top: -20px;
-							opacity: 0;
-							font-size: 18px;
-							padding: 0 50px;
-							line-height: 1;
-							-webkit-transition: all 300ms ease-in-out;
-							-moz-transition: all 300ms ease-in-out;
-							-ms-transition: all 300ms ease-in-out;
-							-o-transition: all 300ms ease-in-out;
-							transition: all 300ms ease-in-out;
+							color: #706f6f;
+							font-size: 15px;
+							-webkit-hyphens: auto;
+							-moz-hyphens: auto;
+							-ms-hyphens: auto;
+							hyphens: auto;
 
 							mark, ins {
 								background: transparent;
@@ -527,5 +527,14 @@ a.wcmenucart-contents {
 
 	#colophon {
 		position: fixed;
+	}
+
+	#secondary {
+		display: none;
+	}
+
+	#primary {
+		width: 100%;
+		border-left-width: 50px;
 	}
 }

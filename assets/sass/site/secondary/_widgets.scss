@@ -1,8 +1,63 @@
-.widget {
-	@include rem(margin, 0 0 15px);
+#secondary {
 
-	/* Make sure select elements fit in widgets. */
-	select {
-		max-width: 100%;
+	.wrap {
+		border: 1px solid #ccc;
 	}
+
+	.widget {
+		// margin: 0 0px 10px 0;
+		// padding: 0 0 10px 0;
+		// border-bottom: 1px solid #ccc;
+
+		&:last-of-type {
+			margin-bottom: 0 !important;
+			padding-bottom: 0;
+			border-bottom: 0 !important;
+		}
+
+		.widget {
+		}
+
+		h2.widget-title {
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 10px;
+			margin-bottom: 20px;
+		}
+
+		&#wcpbc_country_selector-2 {
+			margin: 20px;
+			padding-bottom: 10px;
+		}
+
+		&#woof_widget-2 {
+			margin: 20px;
+			padding-bottom: 10px;
+		}
+
+		.woof_submit_search_form_container {
+			overflow: hidden;
+			clear: both;
+			margin: 0;
+		}
+
+		.woof_container {
+			margin-bottom: 20px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #ccc;
+		}
+
+		/* Make sure select elements fit in widgets. */
+		select {
+			max-width: 100%;
+			max-width: 100%;
+			width: 100%;
+			-webkit-appearance: none;
+			border-radius: 0;
+			border: 1px solid #ddd;
+			background: #f9f9f9;
+			padding: 5px;
+			outline: 0;
+		}
+	}
+
 }

@@ -22,7 +22,7 @@
 			endif;
 			?>
 			<div class="entry-meta">
-				<p>Posted on <?php echo get_the_date(); ?></p>
+				<p><?php echo get_the_date(); ?></p>
 			</div>
 			<hr>
 		</header>
