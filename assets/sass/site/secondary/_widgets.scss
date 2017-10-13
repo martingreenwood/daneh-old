@@ -9,6 +9,21 @@
 		// padding: 0 0 10px 0;
 		// border-bottom: 1px solid #ccc;
 
+		h4 {
+			font-size: 14px;
+			letter-spacing: 3px;
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+
+		.woof_list li {
+			padding-bottom: 0 !important;
+		}
+
+		label {
+			font-weight: 300;
+		}
+
 		&:last-of-type {
 			margin-bottom: 0 !important;
 			padding-bottom: 0;
@@ -22,9 +37,11 @@
 			border-bottom: 1px solid #ccc;
 			padding-bottom: 10px;
 			margin-bottom: 20px;
+			letter-spacing: 3px;
+			font-weight: 400;
 		}
 
-		&#wcpbc_country_selector-2 {
+		&#wcpbc_country_selector-2, &#woocs_selector-2 {
 			margin: 20px;
 			padding-bottom: 10px;
 		}

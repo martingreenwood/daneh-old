@@ -15,11 +15,11 @@
 
 		<header>
 			<h1>Contact Us</h1>
-			<p>Please fill our contact form out and we will get back to you as soon as possible.</p>
+			<?php the_content(); ?>
 			<hr>
 		</header>
 
-		<?php the_content(); ?>
+		<?php echo do_shortcode( '[gravityform id="1" title="false" description="false" ajax="true"]'); ?>
 	</div>
 
 </article>

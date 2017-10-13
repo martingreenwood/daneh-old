@@ -218,7 +218,7 @@ a.wcmenucart-contents {
 				}
 
 				@include media($large-screen-up) {
-					@include span-columns(2);
+					@include span-columns(4);
 					margin-bottom: 30px;
 				}
 

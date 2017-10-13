@@ -88,7 +88,6 @@ jQuery(function( $ ) {
 		<div class="table">
 			<div class="cell middle">
 				<div class="summary entry-summary">
-
 					<?php
 						/**
 						 * woocommerce_single_product_summary hook.
@@ -114,7 +113,6 @@ jQuery(function( $ ) {
 						remove_action( 'woocommerce_single_product_summary', 'WC_Structured_Data::generate_product_data()', 60 );
 						do_action( 'woocommerce_single_product_summary' );
 					?>
-
 				</div>
 			</div>
 		</div>

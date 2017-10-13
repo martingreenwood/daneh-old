@@ -108,10 +108,9 @@ function daneh_custom_taxonomy_collection()  {
 add_filter('loop_shop_columns', 'loop_columns');
 if (!function_exists('loop_columns')) {
 	function loop_columns() {
-		return 6; // 3 products per row
+		return 3; // 3 products per row
 	}
 }
-
 
 // REMOVE SHIT
 
@@ -262,8 +261,14 @@ function sk_wcmenucart($menu, $args) {
 			$menu_item .= '<i class="fa fa-shopping-cart"></i> ';
 
 			$menu_item .= $cart_contents;
-			$menu_item .= '</a></li>';
+			$menu_item .= '</a>';
+			$menu_item .= '</li>';
 		// Uncomment the line below to hide nav menu cart item when there are no items in the cart
+		}
+		if (is_product() || is_checkout() || is_cart()) {
+			$menu_item .= '<li>';
+			$menu_item .= do_shortcode('[woocs]');
+			$menu_item .= '</li>';
 		}
 		echo $menu_item;
 	$social = ob_get_clean();

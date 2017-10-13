@@ -57,6 +57,19 @@
 		&.focus > a {
 			color: $dark-gray;
 		}
+
+		.woocommerce-currency-switcher-form {
+			display: block;
+			margin: 5px 0;
+
+			.woocommerce-currency-switcher {
+				appearance: none;
+				-webkit-appearance: none;
+				padding: 3px 10px;
+				border-radius: 0;
+				font-size: 13px;
+			}
+		}
 	}
 	a {
 		display: block;

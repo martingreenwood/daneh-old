@@ -289,6 +289,10 @@ a:hover, a:active { outline: 0; }
 
 .main-navigation li:hover > a, .main-navigation li.focus > a { color: #333; }
 
+.main-navigation li .woocommerce-currency-switcher-form { display: block; margin: 5px 0; }
+
+.main-navigation li .woocommerce-currency-switcher-form .woocommerce-currency-switcher { appearance: none; -webkit-appearance: none; padding: 3px 10px; border-radius: 0; font-size: 13px; }
+
 .main-navigation a { display: block; text-decoration: none; letter-spacing: 2px; }
 
 .main-navigation .current_page_item > a, .main-navigation .current-menu-item > a, .main-navigation .current_page_ancestor > a, .main-navigation .current-menu-ancestor > a { color: #333; font-weight: 600; }
@@ -343,11 +347,17 @@ a:hover, a:active { outline: 0; }
 
 #secondary .widget { /* Make sure select elements fit in widgets. */ }
 
+#secondary .widget h4 { font-size: 14px; letter-spacing: 3px; font-weight: 400; text-transform: uppercase; }
+
+#secondary .widget .woof_list li { padding-bottom: 0 !important; }
+
+#secondary .widget label { font-weight: 300; }
+
 #secondary .widget:last-of-type { margin-bottom: 0 !important; padding-bottom: 0; border-bottom: 0 !important; }
 
-#secondary .widget h2.widget-title { border-bottom: 1px solid #ccc; padding-bottom: 10px; margin-bottom: 20px; }
+#secondary .widget h2.widget-title { border-bottom: 1px solid #ccc; padding-bottom: 10px; margin-bottom: 20px; letter-spacing: 3px; font-weight: 400; }
 
-#secondary .widget#wcpbc_country_selector-2 { margin: 20px; padding-bottom: 10px; }
+#secondary .widget#wcpbc_country_selector-2, #secondary .widget#woocs_selector-2 { margin: 20px; padding-bottom: 10px; }
 
 #secondary .widget#woof_widget-2 { margin: 20px; padding-bottom: 10px; }
 
@@ -1001,7 +1011,7 @@ a.wcmenucart-contents { color: inherit; }
 @media screen and (min-width: 767px) { .woocommerce.woocommerce-page #primary .products li { float: left; display: block; margin-right: 2.1276595745%; width: 23.4042553191%; }
   .woocommerce.woocommerce-page #primary .products li:last-child { margin-right: 0; } }
 
-@media screen and (min-width: 959px) { .woocommerce.woocommerce-page #primary .products li { float: left; display: block; margin-right: 2.1276595745%; width: 14.8936170213%; margin-bottom: 30px; }
+@media screen and (min-width: 959px) { .woocommerce.woocommerce-page #primary .products li { float: left; display: block; margin-right: 2.1276595745%; width: 31.914893617%; margin-bottom: 30px; }
   .woocommerce.woocommerce-page #primary .products li:last-child { margin-right: 0; } }
 
 .woocommerce.woocommerce-page #primary .products li.last { margin-right: 0; }
