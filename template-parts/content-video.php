@@ -11,12 +11,6 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-		<header class="page-header">
-			<h1>Video Showreels</h1>
-			<?php the_content( ); ?>
-			<hr>
-		</header>
-
 		<center>
 			<div class="wrapper">
 
@@ -36,6 +30,9 @@
 				<?php endif; ?>
 					<div class="<?php if ($count == 1): ?>feat<?php else: ?>glossy<?php endif; ?>">
 						<?php if ($count == 1): ?>
+							<header class="page-header ">
+								<h1 class="entry-title"><?php the_title(  ) ?></h1>
+							</header>
 							<?php the_content( ); ?>
 						<?php else: ?>
 						<a href="<?php the_permalink(); ?>">

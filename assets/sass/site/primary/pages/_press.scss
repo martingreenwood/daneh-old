@@ -1,5 +1,9 @@
 .press {
 
+	#content {
+		height: auto;
+	}
+
 	.content {
 		@include outer-container(1170px);
 		margin: 0 auto;

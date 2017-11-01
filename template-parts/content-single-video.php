@@ -21,9 +21,7 @@
 				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 			endif;
 			?>
-			<hr>
 		</header>
-
 		<?php
 			the_content();
 		?>
