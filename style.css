@@ -604,6 +604,20 @@ a:hover, a:active { outline: 0; }
 
 .tml .message { margin-bottom: 20px; }
 
+.page .content.left { max-width: 1170px; margin-left: auto; margin-right: auto; margin: 0 auto; text-align: left; float: none; border: 0; }
+
+.page .content.left::after { clear: both; content: ""; display: table; }
+
+.page .content.left header { margin: 40px 0; }
+
+.page .content.left header hr { background-color: #ccc; width: 20%; margin: 40px auto; }
+
+.page .content.left ul { list-style: none; margin: 20px 0; }
+
+#theme-my-login { margin: 0 auto; }
+
+.tml .message { margin-bottom: 20px; }
+
 /*--------------------------------------------------------------
 ## Contact
 --------------------------------------------------------------*/
