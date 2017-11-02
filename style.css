@@ -764,8 +764,6 @@ a:hover, a:active { outline: 0; }
 
 .collections #ninja-slider-pager, .collections #ninja-slider-prev, .collections #ninja-slider-next, .collections #ninja-slider-pause-play { -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; }
 
-.collections #colophon { position: relative; }
-
 /*--------------------------------------------------------------
 ## Retailers
 --------------------------------------------------------------*/
