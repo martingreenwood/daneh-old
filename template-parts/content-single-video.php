@@ -35,6 +35,7 @@
 			array( 
 				'post_type' 		=> 'videos',
 				'posts_per_page' 	=> -1,
+				'post__not_in' => array(get_the_ID()), 
 			) 
 		);
 		if ( $loop->have_posts() ) :
