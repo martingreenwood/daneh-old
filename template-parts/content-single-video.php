@@ -29,7 +29,6 @@
 
 	<center>
 		<div class="wrapper">
-
 		<?php 
 		$count = 1;
 		$loop = new WP_Query( 
@@ -57,7 +56,6 @@
 		endif;
 		wp_reset_postdata();
 		?>
-		
 		</div>
 	</center>
 
