@@ -937,6 +937,8 @@ a:hover, a:active { outline: 0; }
 
 .blog #primary .row .post .overlay small, .archive #primary .row .post .overlay small { color: white; text-transform: uppercase; font-size: 26px; line-height: 1; }
 
+.blog #primary .row .post:hover img, .archive #primary .row .post:hover img { opacity: 0.6; }
+
 .blog #primary .row .post:hover .overlay, .archive #primary .row .post:hover .overlay { opacity: 1; }
 
 .blog #colophon, .archive #colophon { position: relative; }
