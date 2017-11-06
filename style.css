@@ -860,7 +860,9 @@ a:hover, a:active { outline: 0; }
 
 .video .page-header hr, .videos .page-header hr { background-color: #ccc; width: 20%; margin: 40px auto; }
 
-.video .glossy, .videos .glossy { float: left; width: calc(25.48% - 25px); margin: 0 25px 25px 0; }
+.video .glossy, .videos .glossy { display: inline-block; width: calc(25.48% - 25px); margin: 0 25px 25px 0; }
+
+.video .glossy img, .videos .glossy img { display: block; }
 
 .video .glossy:nth-child(5n), .videos .glossy:nth-child(5n) { margin-right: 0; }
 
