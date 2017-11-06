@@ -957,6 +957,10 @@ a:hover, a:active { outline: 0; }
 
 .single-post #colophon { position: relative; }
 
+.blog .newsbox { margin-bottom: 30px; }
+
+.blog .newsbox:last-of-type { margin-bottom: 0; }
+
 .blog .newsbox .half { width: 49%; box-sizing: border-box; display: inline-block; vertical-align: middle; }
 
 .blog .newsbox .half header h1, .blog .newsbox .half header hr { display: inline-block; }
