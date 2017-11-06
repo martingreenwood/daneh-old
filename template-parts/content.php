@@ -34,7 +34,9 @@
 				if( $images ): 
 				foreach( $images as $image ): ?>
 				<div class="image">
-					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+					<a class="gallery" rel="my-gallery" href="<?php echo $image['url']; ?>">
+						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+					</a>
 				</div>
 				<?php endforeach;
 				endif; ?>

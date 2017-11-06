@@ -33,7 +33,7 @@ get_header(); ?>
 			
 			<div class="news-links">
 				<p class="prev">
-					<?php echo get_next_posts_link( 'Older', $loop->max_num_pages );k ?>
+					<?php echo get_next_posts_link( 'Older' ); ?>
 				</p>
 				<p class="next">
 					<?php echo get_previous_posts_link( 'Newer' ); ?>
