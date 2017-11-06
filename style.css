@@ -925,7 +925,9 @@ a:hover, a:active { outline: 0; }
 
 .blog #primary .row, .archive #primary .row { position: relative; }
 
-.blog #primary .row .post, .archive #primary .row .post { text-align: center; position: relative; }
+.blog #primary .row .post, .archive #primary .row .post { text-align: center; position: relative; margin-bottom: 30px; }
+
+.blog #primary .row .post:last-of-type, .archive #primary .row .post:last-of-type { margin-bottom: 0; }
 
 .blog #primary .row .post img, .archive #primary .row .post img { display: block; }
 
@@ -956,10 +958,6 @@ a:hover, a:active { outline: 0; }
 .single-post .press-peice header hr { background-color: #ccc; width: 20%; margin: 40px auto; }
 
 .single-post #colophon { position: relative; }
-
-.blog .newsbox { margin-bottom: 30px; }
-
-.blog .newsbox:last-of-type { margin-bottom: 0; }
 
 .blog .newsbox .half { width: 49%; box-sizing: border-box; display: inline-block; vertical-align: middle; }
 
