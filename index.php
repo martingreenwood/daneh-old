@@ -30,15 +30,6 @@ get_header(); ?>
 
 			endif; ?>
 			</div>
-			
-			<div class="news-links">
-				<p class="prev">
-					<?php echo get_next_posts_link( 'Older' ); ?>
-				</p>
-				<p class="next">
-					<?php echo get_previous_posts_link( 'Newer' ); ?>
-				</p>
-			</div>
 
 		</main>
 	</div>

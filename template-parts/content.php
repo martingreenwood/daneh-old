@@ -11,40 +11,26 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="press-peice">
+	<div class="newsbox">
+		<div class="table"><div class="cell middle">
 
-		<header>
-			<?php
-				the_title( '<h1 class="entry-title">', '</h1>' );
-			?>
-			<!-- <p><?php the_date(); ?></p> -->
-			<hr>
-		</header>
-
-		<?php
-			the_content();
-		?>
-
-		<?php if (get_field( 'enable_image_slider' )): ?>
-		<div class="wrapper">
-			<section id="slides">
-				<?php 
-				$images = get_field('image_slider');
-				$size = 'full'; // (thumbnail, medium, large, full or custom size)
-				if( $images ): 
-				foreach( $images as $image ): ?>
-				<div class="image">
-					<a class="gallery" rel="my-gallery" href="<?php echo $image['url']; ?>">
-						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-					</a>
-				</div>
-				<?php endforeach;
-				endif; ?>
-			</section>
-			<div class="prod-links">
+			<a href="<?php the_permalink(  ); ?> ">
+			<div class="image half">
+				<?php the_post_thumbnail( '' ); ?>
 			</div>
-		</div>
-		<?php endif; ?>
+
+			<div class="title half">
+				<header>
+					<?php
+						the_title( '<h1 class="entry-title">', '</h1>' );
+					?>
+					<!-- <p><?php the_date(); ?></p> -->
+					<!-- <hr> -->
+				</header>
+			</div>
+			</a>
+
+		</div></div>
 	</div>
 
 </article>

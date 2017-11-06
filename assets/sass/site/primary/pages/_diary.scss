@@ -31,3 +31,24 @@
 	}
 
 }
+
+.blog {
+
+	.newsbox {
+
+
+		.half {
+		    width: 49%;
+		    box-sizing: border-box;
+		    display: inline-block;
+		    vertical-align: middle;
+
+		    header {
+		    	h1, hr {
+		    		display: inline-block;
+		    	}
+		    }
+		}
+	}
+
+}
