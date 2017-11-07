@@ -17,6 +17,15 @@ get_header(); ?>
 	<div id="primary" class="content-area container">
 		<main id="main" class="site-main">
 
+			<div class="content">
+
+				<header class="page-header">
+					<h1>Diary</h1>
+					<hr>
+				</header>
+
+			</div>
+
 			<div class="row">
 			<?php
 			if ( have_posts() ) :
