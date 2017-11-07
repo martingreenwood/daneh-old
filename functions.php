@@ -115,6 +115,22 @@ add_action( 'widgets_init', 'daneh_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
+function daneh_anal() {
+?>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109301372-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109301372-1');
+</script>
+<?php
+}
+add_action( 'wp_head', 'daneh_anal', 99);
+
+
 function daneh_scripts() {
 	wp_enqueue_style( 'daneh-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'featherlight-css', '//cdn.rawgit.com/noelboss/featherlight/1.7.8/release/featherlight.min.css' );
