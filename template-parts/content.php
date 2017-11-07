@@ -11,6 +11,15 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+	<div class="content">
+
+		<header class="page-header">
+			<h1>Diary</h1>
+			<hr>
+		</header>
+
+	</div>
+
 	<div class="newsbox">
 		<div class="table"><div class="cell middle">
 

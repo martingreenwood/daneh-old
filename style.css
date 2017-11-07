@@ -963,6 +963,10 @@ a:hover, a:active { outline: 0; }
 
 .single-post #colophon { position: relative; }
 
+.blog .page-header { margin: 40px auto; max-width: 500px; text-align: center; }
+
+.blog .page-header hr { background-color: #ccc; width: 20%; margin: 40px auto; }
+
 .blog .newsbox .half { width: 49%; box-sizing: border-box; display: inline-block; vertical-align: middle; }
 
 .blog .newsbox .half header h1, .blog .newsbox .half header hr { display: inline-block; }

@@ -34,6 +34,18 @@
 
 .blog {
 
+	.page-header {
+		margin: 40px auto;
+		max-width: 500px;
+		text-align: center;
+
+		hr {
+			background-color: #ccc;
+			width: 20%;
+			margin: 40px auto;
+		}
+	}
+
 	.newsbox {
 
 		.half {
