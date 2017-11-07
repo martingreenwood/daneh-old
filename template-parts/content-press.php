@@ -39,7 +39,7 @@
 		<div class="glossy">
 			<?php $pressfile = get_field( 'press_pdf' ); ?>
 			<a href="<?php the_permalink(); ?>">
-				<?php the_post_thumbnail( 'thumbs' ); ?>
+				<?php the_post_thumbnail( 'full' ); ?>
 				<h3><?php the_title( ); ?></h3>
 				<h6><?php echo get_the_date( ); ?></h6>
 			</a>

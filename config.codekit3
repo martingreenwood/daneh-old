@@ -80,13 +80,6 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"\/archive.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/archive.php",
-		"oF": 0
-		},
 	"\/assets\/arrow_down.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1974,19 +1967,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/assets\/sass\/site\/primary\/pages\/_blog.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/assets\/sass\/site\/primary\/pages\/_blog.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/assets\/sass\/site\/primary\/pages\/_center.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2022,19 +2002,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/sass\/site\/primary\/pages\/_contact.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/site\/primary\/pages\/_diary.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/assets\/sass\/site\/primary\/pages\/_diary.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2087,19 +2054,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/sass\/site\/primary\/pages\/_retailers.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/site\/primary\/pages\/_video.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/assets\/sass\/site\/primary\/pages\/_video.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2377,32 +2331,11 @@
 		"oAP": "\/inc\/jetpack.php",
 		"oF": 0
 		},
-	"\/inc\/template-functions.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/inc\/template-functions.php",
-		"oF": 0
-		},
 	"\/inc\/template-tags.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/inc\/template-tags.php",
-		"oF": 0
-		},
-	"\/inc\/woocommerce.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/inc\/woocommerce.php",
-		"oF": 0
-		},
-	"\/index.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/index.php",
 		"oF": 0
 		},
 	"\/languages\/daneh.pot": {
@@ -2619,23 +2552,6 @@
 		"oAP": "\/single.php",
 		"oF": 0
 		},
-	"\/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/style-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/style.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/style.css.map",
-		"oF": 0
-		},
 	"\/template-parts\/content-about.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -2727,20 +2643,6 @@
 		"oAP": "\/template-parts\/content-single-press.php",
 		"oF": 0
 		},
-	"\/template-parts\/content-single-video.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/template-parts\/content-single-video.php",
-		"oF": 0
-		},
-	"\/template-parts\/content-single.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/template-parts\/content-single.php",
-		"oF": 0
-		},
 	"\/template-parts\/content-video.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -2753,13 +2655,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/template-parts\/content-woopage.php",
-		"oF": 0
-		},
-	"\/template-parts\/content.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/template-parts\/content.php",
 		"oF": 0
 		},
 	"\/woocommerce\/content-single-product.php": {
