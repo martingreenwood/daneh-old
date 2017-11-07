@@ -304,7 +304,7 @@ a:hover, a:active { outline: 0; }
 
 .main-navigation.toggled ul li a { line-height: 35px; }
 
-.menu-toggle { display: block; position: fixed; left: 0px; top: 68%; border: transparent; border-radius: 0 4px 4px 0; box-shadow: 1px 2px 2px #000; z-index: 100; outline: 0; background-color: #5a5959; color: #fff; }
+.menu-toggle { display: block; position: fixed; right: 0px; top: 68%; border: transparent; border-radius: 4px 0 0 4px; z-index: 100; outline: 0; background-color: #666; color: #fff; box-shadow: -1px 2px 1px #444; }
 
 @media screen and (min-width: 1100px) { .menu-toggle { display: none; }
   .main-navigation ul { display: block; } }
@@ -537,7 +537,9 @@ a:hover, a:active { outline: 0; }
 
 @media screen and (min-width: 767px) { #content { height: 100vh; padding-bottom: 72px; } }
 
-#primary, #main, .hentry { height: 100%; }
+#primary, #main, .hentry { height: calc(100vh - 103px); }
+
+@media screen and (min-width: 767px) { #primary, #main, .hentry { height: 100%; } }
 
 #primary h1, #primary h2, #primary h3, #primary h4, #primary h5, #primary h6, #main h1, #main h2, #main h3, #main h4, #main h5, #main h6, .hentry h1, .hentry h2, .hentry h3, .hentry h4, .hentry h5, .hentry h6 { clear: both; font-size: 18px; font-weight: 400; color: #666; text-transform: uppercase; }
 
