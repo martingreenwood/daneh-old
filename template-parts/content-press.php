@@ -39,7 +39,7 @@
 		<div class="glossy">
 			<?php $pressfile = get_field( 'press_pdf' ); ?>
 			<a href="<?php the_permalink(); ?>">
-				<?php has_post_thumbnail(  ): ?>
+				<?php if(has_post_thumbnail(  )): ?>
 					<?php the_post_thumbnail( 'full' ); ?>
 				<?php else: ?>
 					<img src="http://www.danehdesign.com/wp-content/uploads/2017/11/daneh.jpg" alt="">
