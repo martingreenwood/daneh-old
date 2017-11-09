@@ -46,14 +46,16 @@
 		</div>
 		<?php endif; ?>
 
+		<a class="backup" href="<?php echo home_url( 'diary'); ?>">Back to Diary</a>
+
 	</div>
 
 	<div class="news-links">
 		<p class="prev">
-			<?php next_post_link( "%link" ); ?>
+			<span><?php previous_post_link( "%link Prev" ); ?></span>
 		</p>
 		<p class="next">
-			<?php previous_post_link( "%link" ); ?>
+			<span><?php next_post_link( "Next %link" ); ?></span>
 		</p>
 	</div>
 </article>

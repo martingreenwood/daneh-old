@@ -30,6 +30,18 @@
 		<?php
 			the_content();
 		?>
+
+		<a class="backup" href="<?php echo home_url( 'press'); ?>">Back to Press</a>
+
+	</div>
+
+	<div class="news-links">
+		<p class="prev">
+			<span><?php previous_post_link( "%link Prev" ); ?></span>
+		</p>
+		<p class="next">
+			<span><?php next_post_link( "Next %link" ); ?></span>
+		</p>
 	</div>
 
 </article>

@@ -38,8 +38,10 @@
 						<a href="<?php the_permalink(); ?>">
 							<?php if (has_post_thumbnail( )): ?>
 								<?php the_post_thumbnail( 'video' ); ?>
+								<h3><?php the_title( ); ?></h3>
 							<?php else: ?>
 								<img src="http://placehold.it/600x400" alt="">
+								<h3><?php the_title( ); ?></h3>
 							<?php endif; ?>
 						</a>
 						<?php endif; ?>

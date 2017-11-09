@@ -10,6 +10,16 @@
 	}
 }
 
+.backup {
+	padding: 12px 40px;
+	display: inline-block;
+	border: 1px solid black;
+	margin: 30px 30px 0;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 1.6;
+}
+
 #primary, #main, .hentry {
 	height: calc(100vh - 103px);
 
@@ -36,6 +46,15 @@
 #main {
 	background: white;
 	position: relative;
+}
+
+.single {
+	.menu-item-128 {
+		a {
+			color: #333;
+			font-weight: 600;
+		}
+	}
 }
 
 .page, .single {

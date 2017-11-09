@@ -31,8 +31,10 @@
 
 	.glossy {
 		display: inline-block;
-		width: calc(25.48% - 25px);
-		margin: 0 25px 25px 0;
+		// width: calc(25.48% - 25px);
+		// margin: 0 25px 25px 0;
+		width: 23.4%;
+		margin: 0 9px 25px;
 
 		img {
 			display: block;

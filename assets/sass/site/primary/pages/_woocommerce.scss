@@ -7,27 +7,44 @@ a.wcmenucart-contents {
 	p.next {
 		right: 10px;
 		float: right;
+		padding: 10px 0 10px 10px;
 
 		@include media($medium-screen-up) {
 			right: -40px;
 		}
 
+		span {
+			padding-right: 30px;
+		}
+
 		a {
 			background-image: url('assets/right-chevron.svg');
+			background-position: center right;
 		}
 	}
 
 	p.prev {
 		left: 10px;
 		float: left;
+		padding: 10px 10px 10px 0;
 
 		@include media($medium-screen-up) {
 			left: -40px;
 		}
 
+		span {
+			padding-left: 30px;
+		}
+
 		a {
 			background-image: url('assets/left-chevron.svg');
+			background-position: center left;	
 		}
+	}
+
+	span {
+		display: inline-flex;
+		position: relative;
 	}
 
 	a {
@@ -35,18 +52,24 @@ a.wcmenucart-contents {
 		width: 20px;
 		height: 28px;
 		background-repeat: no-repeat;
-		background-position: center;
 		background-size: auto 100%;
 		text-indent: -9999px;
 		cursor: pointer;
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
 	}
 
 	p {
 		margin: 0;
 		position: fixed;
-		line-height: 1;
 		top: 50%;
-		margin-top: -14px;
+		margin-top: -25px;
+		display: flex;
+		text-transform: uppercase;
+		line-height: 2;
+		background: white;
 
 		@include media($medium-screen-up) {
 			position: absolute;
