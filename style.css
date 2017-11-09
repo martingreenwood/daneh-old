@@ -551,7 +551,7 @@ a:hover, a:active { outline: 0; }
 
 #main { background: white; position: relative; }
 
-.single .menu-item-128 a { color: #333; font-weight: 600; }
+.single-post .menu-item-128 a { color: #333; font-weight: 600; }
 
 .page .featureimage, .single .featureimage { width: 100%; overflow: hidden; margin-bottom: 25px; height: 300px; }
 
@@ -652,6 +652,8 @@ a:hover, a:active { outline: 0; }
 /*--------------------------------------------------------------
 ## Collections
 --------------------------------------------------------------*/
+.single-collections .menu-item-172 a { color: #333; font-weight: 600; }
+
 .collections { /* --------- navigation controls ------- */ /* The nav id should be: slider id + ("-prev", "-next", and "-pause-play") */ /*.pause*/ /* arrows */ /*============================== =            SLIDER            = ==============================*/ /* --------- slider image ------- */ /* ---------If there are videos ------- */ /* And if you have added the HTML: <div class="video-playbutton-layer"></div> */ /* And if you have YouTube or Vimeo */ /* ---------Arrow buttons ------- */ /* The arrow button id should be: slider id + ("-prev", "-next", and "-pause-play") */ /*pagination within the prev/next buttons*/ /* arrows */ /*------ pager(nav bullets) ------*/ /* The pager id should be: slider id + "-pager" */ }
 
 .collections #content { padding-bottom: 74px; }
