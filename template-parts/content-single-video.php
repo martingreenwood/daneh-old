@@ -46,7 +46,7 @@
 					<?php if (has_post_thumbnail( )): ?>
 						<?php the_post_thumbnail( 'video' ); ?>
 					<?php else: ?>
-						<img src="http://placehold.it/600x400" alt="">
+						<img src="http://www.danehdesign.com/wp-content/uploads/2017/11/daneh.jpg" alt="">
 					<?php endif; ?>
 				</a>
 			</div>
