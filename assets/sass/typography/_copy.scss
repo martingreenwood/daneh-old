@@ -2,6 +2,14 @@ html {
     font-size: 62.5%
 }
 
+.wf-loading {
+
+	h1, h2, h3, h4, p, a{
+		/* Hide the blog title and post titles while web fonts are loading */
+		visibility: hidden;
+	}
+}
+
 p {
 	@include rem(margin-bottom, 15px);
 
