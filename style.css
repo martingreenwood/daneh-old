@@ -539,6 +539,8 @@ a:hover, a:active { outline: 0; }
 
 @media screen and (min-width: 767px) { #content { height: 100vh; padding-bottom: 72px; } }
 
+.wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading h4, .wf-loading h4, .wf-loading p, .wf-loading a { opacity: 0; }
+
 .backup { padding: 12px 40px; display: inline-block; border: 1px solid black; margin: 30px 30px 0; font-weight: 600; text-transform: uppercase; line-height: 1.6; }
 
 #primary, #main, .hentry { height: calc(100vh - 103px); }
