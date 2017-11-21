@@ -530,7 +530,7 @@ a:hover, a:active { outline: 0; }
 
 #masthead .site-branding .custom-logo-link { display: block; }
 
-#masthead .site-branding .custom-logo-link .custom-logo { height: 20px; width: auto; }
+#masthead .site-branding .custom-logo-link .custom-logo { height: 40px; width: auto; }
 
 #loader { background-color: #ffffff; background-image: url(assets/logo.png); background-repeat: no-repeat; background-size: 25%; background-position: 50%; width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: 99999; transition: all 500ms; }
 
