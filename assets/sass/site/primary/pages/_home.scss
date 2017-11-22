@@ -45,9 +45,26 @@
 		}
 	}
 
+	#home_page_box_image_mobile {
+		width: 100%;
+		border: 0;
+
+		@include media($medium-screen-up) {
+			display: none;
+		}
+	}
+
 	#home_page_tall_image {
 		width: 30%;
 		border-left: 25px solid $site-border-color;
+	}
+
+	.hideonmobile {
+		display: none;
+
+		@include media($medium-screen-up) {
+			display: block;
+		}
 	}
 
 	.coverimage {

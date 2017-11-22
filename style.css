@@ -598,7 +598,15 @@ a:hover, a:active { outline: 0; }
 
 .home #home_page_box_image.wide { width: 100%; border: 0; }
 
+.home #home_page_box_image_mobile { width: 100%; border: 0; }
+
+@media screen and (min-width: 767px) { .home #home_page_box_image_mobile { display: none; } }
+
 .home #home_page_tall_image { width: 30%; border-left: 25px solid #fff; }
+
+.home .hideonmobile { display: none; }
+
+@media screen and (min-width: 767px) { .home .hideonmobile { display: block; } }
 
 .home .coverimage { height: 100%; background-size: cover; background-position: top; float: left; }
 
