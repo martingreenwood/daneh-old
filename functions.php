@@ -186,7 +186,7 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * WooCommerce.
  */
-// require get_template_directory() . '/inc/woocommerce.php';
+require get_template_directory() . '/inc/woocommerce.php';
 
 /**
  * Load Jetpack compatibility file.

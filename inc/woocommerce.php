@@ -40,36 +40,6 @@ function my_custom_wc_get_variations_args( $args ) {
 }
 add_filter( 'woocommerce_ajax_admin_get_variations_args', 'my_custom_wc_get_variations_args' );
 
-// function daneh_custom_post_type()
-// {
-// 	register_post_type('retailers',
-// 		[
-// 			'labels'      => [
-// 				'name'          => __('Retailers'),
-// 				'singular_name' => __('Retailer'),
-// 			],
-// 			'public'      => true,
-// 			'has_archive' => false,
-// 			'menu_icon'   => 'dashicons-store',
-// 		]
-// 	);
-
-// 	register_post_type('press',
-// 		[
-// 			'labels'      => [
-// 				'name'          => __('Press'),
-// 				'singular_name' => __('Press'),
-// 			],
-// 			'public'      => true,
-// 			'has_archive' => false,
-// 			'menu_icon'   => 'dashicons-book',
-// 			'supports'    => array( 'title', 'thumbnail', 'editor' ),
-// 		]
-// 	);
-// }
-// add_action( 'init', 'daneh_custom_post_type') ;
-
-
 add_action( 'init', 'daneh_custom_taxonomy_collection' );
 
 function daneh_custom_taxonomy_collection()  {
