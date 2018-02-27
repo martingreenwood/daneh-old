@@ -2779,6 +2779,20 @@
 		"oA": 2,
 		"oAP": "\/woocommerce\/content-single-product.php",
 		"oF": 0
+		},
+	"\/woocommerce\/single-product\/tabs\/additional-information.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/woocommerce\/single-product\/tabs\/additional-information.php",
+		"oF": 0
+		},
+	"\/woocommerce\/single-product\/tabs\/description.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/woocommerce\/single-product\/tabs\/description.php",
+		"oF": 0
 		}
 	},
 "hooks": [
