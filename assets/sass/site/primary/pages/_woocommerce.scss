@@ -560,15 +560,14 @@ a.wcmenucart-contents {
 	}
 }
 
+.woocommerce.single-product #primary .product .entry-summary h2 {
+	display: none;
+}
 
 .woocommerce.single-product {
 
 	.product .cart .variations {
 		width: auto;	
-	}
-
-	#primary .product .entry-summary h2 {
-		display: none;
 	}
 
 	#colophon {
