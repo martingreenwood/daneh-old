@@ -140,6 +140,7 @@ a.wcmenucart-contents {
 								opacity: 0;
 								width: 100%;
 								height: 100%;
+								height: 100vh;
 								position: absolute;
 								top: 0;
 								left: 0;
@@ -150,7 +151,7 @@ a.wcmenucart-contents {
 								background-position: center;
 							}
 
-							&:after {
+							&:before {
 								content: "Click to enlarge / view more";
 								opacity: 1;
 								position: absolute;
