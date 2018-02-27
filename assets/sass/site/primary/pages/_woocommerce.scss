@@ -7,7 +7,7 @@ a.wcmenucart-contents {
 }
 
 .summary h2:first-of-type {
-display:none;
+	display:none;
 }
 
 .prod-links, .news-links {
@@ -565,6 +565,10 @@ display:none;
 
 	.product .cart .variations {
 		width: auto;	
+	}
+
+	#primary .product .entry-summary h2 {
+		display: none;
 	}
 
 	#colophon {

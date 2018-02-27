@@ -1172,6 +1172,8 @@ a.wcmenucart-contents { color: inherit; }
 
 .woocommerce.single-product .product .cart .variations { width: auto; }
 
+.woocommerce.single-product #primary .product .entry-summary h2 { display: none; }
+
 .woocommerce.single-product #colophon { position: fixed; }
 
 .woocommerce.single-product #secondary { display: none; }
