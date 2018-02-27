@@ -237,7 +237,7 @@ function sk_wcmenucart($menu, $args) {
 		}
 		if (is_product() || is_checkout() || is_cart()) {
 			$menu_item .= '<li>';
-			$menu_item .= do_shortcode('[woocs]');
+				$menu_item .= do_shortcode('[woocs]');
 			$menu_item .= '</li>';
 		}
 		echo $menu_item;

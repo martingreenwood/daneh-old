@@ -150,6 +150,15 @@ a.wcmenucart-contents {
 								background-position: center;
 							}
 
+							&:after {
+								content: "Click to enlarge / view more";
+								opacity: 1;
+								position: absolute;
+								top: 0;
+								right: 0;
+								color: black;
+							}
+
 							&:hover {
 								
 								&:after {
@@ -299,8 +308,9 @@ a.wcmenucart-contents {
 			}
 
 			.content, .featureimage {
-				background-size: cover;
-				background-position: top;
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
 				float: left;
 			}
 
