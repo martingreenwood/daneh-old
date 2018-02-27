@@ -1006,6 +1006,8 @@ a:hover, a:active { outline: 0; }
 --------------------------------------------------------------*/
 a.wcmenucart-contents { color: inherit; }
 
+.pswp__caption__center { display: none; }
+
 .prod-links p.next, .news-links p.next { right: 10px; float: right; padding: 10px 0 10px 10px; }
 
 @media screen and (min-width: 767px) { .prod-links p.next, .news-links p.next { right: -40px; } }
