@@ -87,6 +87,26 @@
 		"oAP": "\/archive.php",
 		"oF": 0
 		},
+	"\/assets\/001-mastercard.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/001-mastercard.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/002-business.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/002-business.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/arrow_down.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -2778,13 +2798,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/woocommerce\/content-single-product.php",
-		"oF": 0
-		},
-	"\/woocommerce\/single-product\/tabs\/additional-information.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/woocommerce\/single-product\/tabs\/additional-information.php",
 		"oF": 0
 		},
 	"\/woocommerce\/single-product\/tabs\/description.php": {
