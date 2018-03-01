@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 function woocommerce_template_product_description() {
-  woocommerce_get_template( 'single-product/tabs/description.php' );
+  //woocommerce_get_template( 'single-product/tabs/description.php' );
 }
 
 ?>
