@@ -109,6 +109,9 @@ function bbloomer_remove_sidebar_product_pages() {
 add_filter( 'woocommerce_show_page_title' , 'woo_hide_page_title' );
 
 
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+add_action( 'woocommerce_single_product_summary', 'the_content', 20 );
+
 /**
  * woo_hide_page_title
  *
@@ -137,7 +140,7 @@ function woo_hide_page_title() {
 function daneh_des_product() {
 	the_excerpt();
 }
-add_action( 'woocommerce_single_product_summary', 'daneh_des_product', 40 );
+//add_action( 'woocommerce_single_product_summary', 'daneh_des_product', 40 );
 
 /**
  * daneh_prod_collection

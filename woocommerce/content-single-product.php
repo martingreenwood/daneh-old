@@ -20,10 +20,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-function woocommerce_template_product_description() {
-  //woocommerce_get_template( 'single-product/tabs/description.php' );
-}
-
 ?>
 
 <?php
@@ -107,13 +103,13 @@ jQuery(function( $ ) {
 						 */
 
 						remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
+						remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
 						remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
 						remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
 						remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
 						remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50 );
 						remove_action( 'woocommerce_single_product_summary', 'WC_Structured_Data::generate_product_data()', 60 );
 
-						add_action( 'woocommerce_single_product_summary', 'woocommerce_template_product_description', 22 );
 						add_action( 'woocommerce_single_product_summary', 'add_tcs', 35 );
 						add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 65 );
 						add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 70 );
