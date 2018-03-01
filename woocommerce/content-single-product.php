@@ -113,7 +113,7 @@ jQuery(function( $ ) {
 						remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50 );
 						remove_action( 'woocommerce_single_product_summary', 'WC_Structured_Data::generate_product_data()', 60 );
 
-						add_action( 'woocommerce_single_product_summary', 'woocommerce_template_product_description', 20 );
+						add_action( 'woocommerce_single_product_summary', 'woocommerce_template_product_description', 22 );
 						add_action( 'woocommerce_single_product_summary', 'add_tcs', 35 );
 						add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 65 );
 						add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 70 );
