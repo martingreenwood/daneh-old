@@ -21,6 +21,9 @@
 
 		<?php echo do_shortcode( '[gravityform id="1" title="false" description="false" ajax="true"]' ); ?>
 
+		<br>
+		<br>
+		
 		<?php the_field( 'address', 'options' ); ?>
 		
 	</div>

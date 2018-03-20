@@ -36,8 +36,10 @@
 				<?php if (get_field( 'youtube', 'options' )): ?>
 					<li><a href="<?php echo get_field( 'youtube', 'options' ); ?>"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
 				<?php endif; ?>
+				<?php if (is_woocommerce()): ?>
 					<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/001-mastercard.svg" width="24" alt=""></li>
 					<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/002-business.svg" width="24" alt=""></li>
+				<?php endif; ?>
 				</ul>
 			</div>
 
