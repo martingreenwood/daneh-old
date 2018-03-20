@@ -19,7 +19,7 @@
 			<hr>
 		</header>
 
-		<?php do_shortcode( '[gravityform id="1" title="false" description="false" ajax="true"]' ); ?>
+		<?php echo do_shortcode( '[gravityform id="1" title="false" description="false" ajax="true"]' ); ?>
 
 		<?php the_field( 'address', 'options' ); ?>
 		
