@@ -347,7 +347,7 @@ a:hover, a:active { outline: 0; }
 --------------------------------------------------------------*/
 #secondary .wrap { border: 1px solid #ccc; }
 
-#secondary .widget { /* Make sure select elements fit in widgets. */ }
+#secondary .widget { margin: 20px; padding-bottom: 10px; /* Make sure select elements fit in widgets. */ }
 
 #secondary .widget h4 { font-size: 14px; letter-spacing: 3px; font-weight: 400; text-transform: uppercase; }
 
@@ -358,10 +358,6 @@ a:hover, a:active { outline: 0; }
 #secondary .widget:last-of-type { margin-bottom: 0 !important; padding-bottom: 0; border-bottom: 0 !important; }
 
 #secondary .widget h2.widget-title { border-bottom: 1px solid #ccc; padding-bottom: 10px; margin-bottom: 20px; letter-spacing: 3px; font-weight: 400; }
-
-#secondary .widget#wcpbc_country_selector-2, #secondary .widget#woocs_selector-2 { margin: 20px; padding-bottom: 10px; }
-
-#secondary .widget#woof_widget-2 { margin: 20px; padding-bottom: 10px; }
 
 #secondary .widget .woof_submit_search_form_container { overflow: hidden; clear: both; margin: 0; }
 
