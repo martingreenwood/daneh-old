@@ -238,32 +238,74 @@ a.wcmenucart-contents {
 		}
 	}
 
+	h2.togglesidebar {
+		margin: 0 50px;
+		line-height: 6rem;
+		background: #333;
+		padding: 0 20px;
+		text-transform: uppercase;
+		color: white;
+		cursor: pointer;
+
+		@include media($medium-screen-up) {
+			display: none;
+		}
+	}
+
 	#secondary {
-		width: 25%;
-		float: left;
 		border-left: 50px solid white;
-		border-right: 25px solid white;
+		border-right: 50px solid white;
+		// margin-top: 50px;
+		@include span-columns(12);
+		display: none;
+
+		@include media($medium-screen-up) {
+			@include span-columns(4);
+			border-right: 0;
+			display: block;
+		}
+
+		@include media($large-screen-up) {
+			@include span-columns(3);
+			margin-top: 0;
+		}
 	}
 
 	#primary {
-		width: 75%;
-		float: right;
 		border-right: 50px solid white;
-		border-left: 25px solid white;
+		border-left: 50px solid white;
+		margin-top: 50px;
+		@include span-columns(12);
+		height: auto;
+
+		@include media($medium-screen-up) {
+			@include span-columns(8);
+			border-left: 0;
+			margin-top: 0;
+		}
+
+		@include media($large-screen-up) {
+			@include span-columns(9);
+		}
 
 		.products {
 			margin-bottom: 0;
 
+			&[class*=columns-] li.product{
+				clear: none !important;
+				margin: inherit !important;
+			}
+
 			li {
-				@include span-columns(12);
+				@include span-columns(12 of 12);
 				margin-bottom: 15px;
 
 				@include media($medium-screen-up) {
-					@include span-columns(3);
+					@include span-columns(2.66 of 8);
 				}
 
 				@include media($large-screen-up) {
-					@include span-columns(4);
+					@include span-columns(3 of 9);
 					margin-bottom: 30px;
 				}
 
@@ -575,7 +617,7 @@ a.wcmenucart-contents {
 	}
 
 	#colophon {
-		position: fixed;
+		position: relative;
 	}
 
 	#secondary {
@@ -586,4 +628,10 @@ a.wcmenucart-contents {
 		width: 100%;
 		border-left-width: 50px;
 	}
+}
+
+.woocommerce-cart, .woocommerce-checkout {
+	#colophon {
+		position: relative;
+	}	
 }

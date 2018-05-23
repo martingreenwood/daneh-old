@@ -7,7 +7,7 @@
 		"uuidString": "6247EA43-BE47-41A5-A1DE-CE07694BE653"
 		}
 	],
-"creatorBuild": "26330",
+"creatorBuild": "26680",
 "files": {
 	"\/404.php": {
 		"cB": 0,
@@ -117,6 +117,37 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/fonts\/Anodyne-export\/Anodyne.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/Anodyne-export\/Anodyne-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/fonts\/Anodyne-export\/Anodyne.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/Anodyne-export\/Anodyne.ttf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/Anodyne-export\/Anodyne.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/Anodyne-export\/Anodyne.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/Anodyne-export\/Anodyne.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/Anodyne-export\/Anodyne.woff2",
+		"oF": 0
+		},
 	"\/assets\/fonts\/Anodyne.eot": {
 		"cB": 0,
 		"ft": 8192,
@@ -189,9 +220,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/assets\/js\/customizer-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
@@ -209,9 +240,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/assets\/js\/navigation-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
@@ -219,9 +250,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/assets\/js\/skip-link-focus-fix-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
@@ -2171,7 +2202,7 @@
 		"oA": 0,
 		"oAP": "\/style.css",
 		"oF": 2,
-		"oS": 2,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/assets\/sass\/typography\/_copy.scss": {
@@ -2816,7 +2847,8 @@
 	"creationDate": 522755208,
 	"displayValue": "daneh",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-ceiling"
+	"iconImageName": "meme-ceiling",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -4619,6 +4651,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {

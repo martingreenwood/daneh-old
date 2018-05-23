@@ -12,6 +12,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 
+<h2 class="togglesidebar">Show Filters</h2>
 <aside id="secondary" class="widget-area">
 	<div class="wrap">
 		<?php dynamic_sidebar( 'sidebar-1' ); ?>
