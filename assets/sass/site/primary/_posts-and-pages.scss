@@ -29,9 +29,9 @@
 #primary, #main, .hentry {
 	height: calc(100vh - 103px);
 
-	@include media($medium-screen-up) {
-		height: 100%;
-	}
+	// @include media($medium-screen-up) {
+	// 	height: 100%;
+	// }
 
 	h1, h2, h3, h4, h5, h6 {
 		clear: both;
