@@ -4,7 +4,7 @@
 		position: relative;
 	}
 
-	#page, #content, #primary {
+	#page, #content, #primary, #main {
 		height: auto;
 	}
 
@@ -47,6 +47,7 @@
 				text-align: center;
 				position: relative;
 				margin-bottom: 30px;
+				height: auto;
 
 				&:last-of-type {
 					margin-bottom: 0;
