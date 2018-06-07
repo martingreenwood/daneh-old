@@ -4,9 +4,13 @@
 	padding: 20px 0;
 	background: $site-border-color;
 
-	position: fixed;
+	position: relative;
 	bottom: 0;
 	z-index: 10;
+
+	@include media($medium-screen-up) {
+		position: fixed;
+	}
 
 	.social {
 		float: left;
@@ -109,5 +113,12 @@
 				}
 			}
 		}
+	}
+}
+
+
+.home {
+	#colophon {
+		position: fixed;
 	}
 }

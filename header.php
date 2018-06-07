@@ -33,7 +33,7 @@
 
 			<nav id="site-navigation" class="main-navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-					<i class="fa fa-bars" aria-hidden="true"></i>
+					<i class="fa fa-bars" aria-hidden="true"></i> MENU
 				</button>
 				<?php
 					wp_nav_menu( array(

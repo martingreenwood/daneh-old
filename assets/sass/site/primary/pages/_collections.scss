@@ -26,6 +26,11 @@
 
 			div {
 				height: 100%;
+				margin: 0;
+
+				@include media($medium-screen-up) {
+					margin: 0 20px; 
+				}
 			}
 		}
 

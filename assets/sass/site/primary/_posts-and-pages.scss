@@ -1,6 +1,6 @@
 #content {
 	padding-bottom: 120px;
-	padding-top: 90px;
+	padding-top: 129px;
 	position: relative;
 	background-color: $site-border-color;
 
@@ -27,11 +27,11 @@
 }
 
 #primary, #main, .hentry {
-	height: calc(100vh - 163px);
+	
 
-	// @include media($medium-screen-up) {
-	// 	height: 100%;
-	// }
+	@include media($medium-screen-up) {
+		height: calc(100vh - 163px);
+	}
 
 	h1, h2, h3, h4, h5, h6 {
 		clear: both;
