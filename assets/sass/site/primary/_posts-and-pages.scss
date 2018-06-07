@@ -6,7 +6,7 @@
 
 	@include media($medium-screen-up) {
 		min-height: 100vh;
-		padding-bottom: 72px;
+		padding-bottom: 80px;
 	}
 }
 
@@ -30,7 +30,7 @@
 	
 
 	@include media($medium-screen-up) {
-		height: calc(100vh - 163px);
+		height: calc(100vh - 152px);
 	}
 
 	h1, h2, h3, h4, h5, h6 {

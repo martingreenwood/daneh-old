@@ -1,9 +1,35 @@
 .home {
 	height: 100vh;
 
+	#primary {
+		padding: 0;
+	}
+
 	div#video {
 		width: 100%;
 		height: calc(100% - 74px);
+
+		&:before {
+			content: " ";
+			width: 50px;
+			background: white;
+			height: 100%;
+			position: absolute;
+			z-index: 100;
+			left: 0;
+			top: 0;
+		}
+
+		&:after {
+			content: " ";
+			width: 50px;
+			background: white;
+			height: 100%;
+			position: absolute;
+			z-index: 100;
+			left: right;
+			top: 0;
+		}
 	}
 
 	video { 
