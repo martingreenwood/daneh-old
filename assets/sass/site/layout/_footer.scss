@@ -118,7 +118,9 @@
 
 
 .home {
-	#colophon {
-		position: fixed;
+	@include media($medium-screen-up) {
+		#colophon {
+			position: fixed;	
+		}
 	}
 }
