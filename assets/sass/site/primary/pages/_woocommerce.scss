@@ -507,6 +507,10 @@ a.wcmenucart-contents {
 
 	.woocommerce {
 
+		form .form-row label {
+			text-align: left;
+		}
+
 		#add_payment_method .wc-proceed-to-checkout, 
 		.wc-proceed-to-checkout, 
 		.wc-proceed-to-checkout {
@@ -576,15 +580,20 @@ a.wcmenucart-contents {
 	}
 
 	div#customer_details {
-		float: left;
-		width: 50%;
-		border-right: 25px solid white;
+		@include media($large-screen-up) {
+			float: left;
+			width: 50%;
+			border-right: 25px solid white;
+		}
 	}
 
 	div#order_review {
-		float: left;
-		width: 50%;
-		border-left: 25px solid white;
+
+		@include media($large-screen-up) {
+			float: left;
+			width: 50%;
+			border-left: 25px solid white;
+		}
 	}
 }
 
