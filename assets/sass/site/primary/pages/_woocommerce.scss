@@ -91,6 +91,10 @@ a.wcmenucart-contents {
 
 .woocommerce.woocommerce-page {
 
+	#primary, #main, .hentry {
+		height: auto;
+	}
+
 	#content {
 
 		.woocommerce-error, .woocommerce-info, .woocommerce-message {
@@ -505,6 +509,10 @@ a.wcmenucart-contents {
 
 .woocommerce-checkout, .woocommerce-cart {
 
+	#primary, #main, .hentry {
+		height: auto;
+	}
+
 	.woocommerce {
 
 		form .form-row label {
@@ -625,6 +633,10 @@ a.wcmenucart-contents {
 
 .woocommerce.single-product {
 
+	#primary, #main, .hentry {
+		height: auto;
+	}
+
 	.product .cart .variations {
 		width: auto;	
 	}
@@ -644,6 +656,9 @@ a.wcmenucart-contents {
 }
 
 .woocommerce-cart, .woocommerce-checkout {
+	#primary, #main, .hentry {
+		height: auto;
+	}
 	#colophon {
 		position: relative;
 	}	
